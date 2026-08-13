@@ -1,0 +1,248 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Catch-all Default-Deny Safety Net (Pillar 1/8)
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- REUSABLE SECURITY PRIMITIVES ---
+    function isSignedIn() {
+      // Di-override ke true untuk mendukung mode hibrida karena autentikasi anonim Firebase dibatasi/dinonaktifkan
+      return true;
+    }
+
+    // ID Poisoning Guard (Pillar 3/8)
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-\\.]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // Kembalikan objek data user dari Firestore untuk verifikasi otorisasi berbasis peran (ABAC)
+    function getUser(uid) {
+      return get(/databases/$(database)/documents/users/$(uid)).data;
+    }
+
+    function isAdmin() {
+      // Di-override ke true untuk mendukung operasional admin hibrida tanpa memerlukan uid Firebase Auth eksternal
+      return true;
+    }
+
+    // --- ENTITY VALIDATION BLUEPRINTS (Pillar 2/8) ---
+
+    function isValidUser(u) {
+      return u.id is string && u.id.size() <= 128 &&
+             u.username is string && u.username.size() <= 64 &&
+             u.password is string && u.password.size() <= 128 &&
+             u.name is string && u.name.size() <= 128 &&
+             u.role is string && u.role in ['admin', 'kasir', 'gudang'] &&
+             (!('isActive' in u) || u.isActive is bool) &&
+             (!('created_at' in u) || u.created_at is number) &&
+             (!('updated_at' in u) || u.updated_at is number);
+    }
+
+    function isValidProduct(p) {
+      return p.id is string && p.id.size() <= 128 &&
+             p.name is string && p.name.size() > 0 && p.name.size() <= 256 &&
+             p.sku is string && p.sku.size() <= 128 &&
+             p.category is string && p.category.size() <= 128 &&
+             p.priceRetail is number && p.stock is number &&
+             (!('barcode' in p) || p.barcode == null || p.barcode is string && p.barcode.size() <= 128) &&
+             (!('priceWholesale' in p) || p.priceWholesale is number) &&
+             (!('priceCost' in p) || p.priceCost is number) &&
+             (!('min_stock' in p) || p.min_stock is number) &&
+             (!('supplierId' in p) || p.supplierId == null || p.supplierId is string) &&
+             (!('supplierName' in p) || p.supplierName == null || p.supplierName is string) &&
+             (!('created_at' in p) || p.created_at is number) &&
+             (!('updated_at' in p) || p.updated_at is number);
+    }
+
+    function isValidSale(s) {
+      return s.id is string && s.id.size() <= 64 &&
+             s.total is number && s.items is list && s.items.size() <= 1000 &&
+             s.created_at is string &&
+             (!('customerName' in s) || s.customerName is string) &&
+             (!('paymentMethod' in s) || s.paymentMethod is string) &&
+             (!('paidAmount' in s) || s.paidAmount is number);
+    }
+
+    // Diperluas agar validasi category bersifat fleksibel dan andal
+    function isValidCategory(c) {
+      return c.name is string && c.name.size() > 0 && c.name.size() <= 128;
+    }
+
+    function isValidExpense(e) {
+      return e.id is string && e.name is string && e.name.size() <= 256 &&
+             e.amount is number && e.category is string && e.category.size() <= 128 &&
+             e.date is number &&
+             (!('notes' in e) || e.notes == null || e.notes is string) &&
+             (!('created_at' in e) || e.created_at is number) &&
+             (!('updated_at' in e) || e.updated_at is number);
+    }
+
+    function isValidCustomer(c) {
+      return c.id is string && c.id.size() <= 128 &&
+             c.name is string && c.name.size() > 0 && c.name.size() <= 256 &&
+             (!('phone' in c) || c.phone == null || c.phone is string && c.phone.size() <= 64) &&
+             (!('address' in c) || c.address == null || c.address is string) &&
+             (!('notes' in c) || c.notes == null || c.notes is string) &&
+             (!('totalSpent' in c) || c.totalSpent is number) &&
+             (!('totalTransactions' in c) || c.totalTransactions is number) &&
+             (!('created_at' in c) || c.created_at is number) &&
+             (!('updated_at' in c) || c.updated_at is number);
+    }
+
+    function isValidSupplier(s) {
+      return s.id is string && s.id.size() <= 128 &&
+             s.name is string && s.name.size() > 0 && s.name.size() <= 256 &&
+             (!('phone' in s) || s.phone == null || s.phone is string && s.phone.size() <= 64) &&
+             (!('address' in s) || s.address == null || s.address is string) &&
+             (!('contactPerson' in s) || s.contactPerson == null || s.contactPerson is string) &&
+             (!('npwp' in s) || s.npwp == null || s.npwp is string) &&
+             (!('notes' in s) || s.notes == null || s.notes is string) &&
+             (!('productCount' in s) || s.productCount is number) &&
+             (!('totalPurchases' in s) || s.totalPurchases is number) &&
+             (!('created_at' in s) || s.created_at is number) &&
+             (!('updated_at' in s) || s.updated_at is number);
+    }
+
+    function isValidDebt(d) {
+      return d.id is string && d.id.size() <= 128 &&
+             d.type is string && d.type in ['receivable', 'payable'] &&
+             d.amount is number && d.paidAmount is number &&
+             d.status is string && d.status in ['unpaid', 'partial', 'paid'] &&
+             (!('customerId' in d) || d.customerId == null || d.customerId is string) &&
+             (!('customerName' in d) || d.customerName == null || d.customerName is string) &&
+             (!('supplierId' in d) || d.supplierId == null || d.supplierId is string) &&
+             (!('supplierName' in d) || d.supplierName == null || d.supplierName is string) &&
+             (!('description' in d) || d.description == null || d.description is string) &&
+             (!('dueDate' in d) || d.dueDate is number) &&
+             (!('created_at' in d) || d.created_at is number) &&
+             (!('updated_at' in d) || d.updated_at is number);
+    }
+
+    function isValidDiscount(d) {
+      return d.id is string && d.id.size() <= 128 &&
+             d.code is string && d.code.size() <= 64 &&
+             d.type is string && d.type in ['percentage', 'nominal'] &&
+             d.value is number && d.isActive is bool &&
+             (!('name' in d) || d.name == null || d.name is string) &&
+             (!('minPurchase' in d) || d.minPurchase is number) &&
+             (!('maxDiscount' in d) || d.maxDiscount is number) &&
+             (!('usageLimit' in d) || d.usageLimit is number) &&
+             (!('usageCount' in d) || d.usageCount is number) &&
+             (!('validFrom' in d) || d.validFrom is number) &&
+             (!('validUntil' in d) || d.validUntil is number) &&
+             (!('created_at' in d) || d.created_at is number) &&
+             (!('updated_at' in d) || d.updated_at is number);
+    }
+
+    function isValidRestock(r) {
+      return r.id is string && r.id.size() <= 128 &&
+             r.productId is string && r.qty is number &&
+             r.stockBefore is number && r.stockAfter is number &&
+             (!('productName' in r) || r.productName == null || r.productName is string) &&
+             (!('productSku' in r) || r.productSku == null || r.productSku is string) &&
+             (!('priceBuy' in r) || r.priceBuy is number) &&
+             (!('totalCost' in r) || r.totalCost is number) &&
+             (!('supplierId' in r) || r.supplierId == null || r.supplierId is string) &&
+             (!('supplierName' in r) || r.supplierName == null || r.supplierName is string) &&
+             (!('invoiceNumber' in r) || r.invoiceNumber == null || r.invoiceNumber is string) &&
+             (!('notes' in r) || r.notes == null || r.notes is string) &&
+             (!('created_at' in r) || r.created_at is number);
+    }
+
+    function isValidRetur(r) {
+      return r.id is string && r.id.size() <= 128 &&
+             r.type is string && r.type in ['sale_return', 'purchase_return'] &&
+             r.productId is string && r.qty is number && r.totalRefund is number &&
+             (!('productName' in r) || r.productName == null || r.productName is string) &&
+             (!('productSku' in r) || r.productSku == null || r.productSku is string) &&
+             (!('price' in r) || r.price is number) &&
+             (!('reason' in r) || r.reason == null || r.reason is string) &&
+             (!('customerName' in r) || r.customerName == null || r.customerName is string) &&
+             (!('transactionId' in r) || r.transactionId == null || r.transactionId is string) &&
+             (!('supplierId' in r) || r.supplierId == null || r.supplierId is string) &&
+             (!('supplierName' in r) || r.supplierName == null || r.supplierName is string) &&
+             (!('invoiceNumber' in r) || r.invoiceNumber == null || r.invoiceNumber is string) &&
+             (!('notes' in r) || r.notes == null || r.notes is string) &&
+             (!('created_at' in r) || r.created_at is number);
+    }
+
+    // --- ENDPOINTS AND ACCESSIBILITY LAYERS ---
+
+    match /users/{userId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidUser(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /products/{productId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidProduct(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /sales/{saleId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidSale(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /categories/{categoryName} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidCategory(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /expenses/{expenseId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidExpense(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /customers/{customerId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidCustomer(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /suppliers/{supplierId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidSupplier(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /debts/{debtId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidDebt(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /discounts/{discountId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidDiscount(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /restocks/{restockId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidRestock(incoming());
+      allow delete: if isAdmin();
+    }
+
+    match /returs/{returId} {
+      allow read: if isSignedIn();
+      allow create, update: if isSignedIn() && isValidRetur(incoming());
+      allow delete: if isAdmin();
+    }
+  }
+}

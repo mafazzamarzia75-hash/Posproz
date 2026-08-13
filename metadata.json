@@ -1,0 +1,11 @@
+{
+  "name": "Remix: Remix: POS Ferry Pro",
+  "description": "Professional multi-platform POS system with AI data assistance, SQLite offline-first database, and universal hardware support for scanners and printers.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,5 +1,53 @@
 {
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "tauri": "tauri",
+    "tauri:build": "tauri build",
+    "tauri:dev": "tauri dev"
+  },
   "dependencies": {
-    "vite": "^8.2.2"
+    "@capacitor/android": "^8.4.1",
+    "@supabase/supabase-js": "^2.108.1",
+    "@tailwindcss/vite": "^4.1.14",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "@zxing/browser": "^0.2.0",
+    "clsx": "^2.1.1",
+    "dexie": "^4.4.3",
+    "dotenv": "^17.2.3",
+    "exceljs": "^3.4.0",
+    "firebase": "^12.14.0",
+    "lucide-react": "^0.546.0",
+    "mongodb": "^7.3.0",
+    "mongoose": "^9.7.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.14.2",
+    "recharts": "^3.8.1",
+    "tailwind-merge": "^3.5.0",
+    "uuid": "^14.0.0",
+    "xlsx": "^0.18.5",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.11.2",
+    "@types/jsbarcode": "^3.11.4",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.21",
+    "jsbarcode": "^3.12.3",
+    "tailwindcss": "^4.1.14",
+    "typescript": "~5.8.2",
+    "vite": "^6.4.3",
+    "webfontloader": "^1.6.28"
   }
 }

@@ -1,0 +1,5006 @@
+{
+  "data": {
+    "products": [
+      {
+        "name": "INDOMIE KALDU AYAM",
+        "sku": "089686010107",
+        "barcode": "089686010107",
+        "category": "Makanan",
+        "priceRetail": 3500,
+        "priceWholesale": 3000,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "INDOMIE SOTO MIE",
+        "sku": "089686010343",
+        "barcode": "089686010343",
+        "category": "Makanan",
+        "priceRetail": 3500,
+        "priceWholesale": 3000,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "INDOMIE SOTO BANJAR",
+        "sku": "089686010435",
+        "barcode": "089686010435",
+        "category": "Makanan",
+        "priceRetail": 3500,
+        "priceWholesale": 3000,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "INDOMIE GORENG",
+        "sku": "089686010824",
+        "barcode": "089686010824",
+        "category": "Makanan",
+        "priceRetail": 4000,
+        "priceWholesale": 3500,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "INDOMIE GRG PEDAS",
+        "sku": "089686011036",
+        "barcode": "089686011036",
+        "category": "Makanan",
+        "priceRetail": 4000,
+        "priceWholesale": 3500,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "SARIMI ISI2 KOYA JERUK",
+        "sku": "089686017755",
+        "barcode": "089686017755",
+        "category": "Umum",
+        "priceRetail": 6500,
+        "priceWholesale": 5800,
+        "stock": 24,
+        "min_stock": 6
+      },
+      {
+        "name": "SARIMI ISI2 BASO SAPI",
+        "sku": "089686018011",
+        "barcode": "089686018011",
+        "category": "Makanan",
+        "priceRetail": 6500,
+        "priceWholesale": 5800,
+        "stock": 24,
+        "min_stock": 6
+      },
+      {
+        "name": "SARIMI ISI2 TONGSENG AYAM",
+        "sku": "089686018080",
+        "barcode": "089686018080",
+        "category": "Makanan",
+        "priceRetail": 6500,
+        "priceWholesale": 5800,
+        "stock": 24,
+        "min_stock": 6
+      },
+      {
+        "name": "INDOMIE COTO MAKASSAR",
+        "sku": "089686043051",
+        "barcode": "089686043051",
+        "category": "Makanan",
+        "priceRetail": 3500,
+        "priceWholesale": 3000,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "INDOMIE SOTO LAMONGAN",
+        "sku": "089686043419",
+        "barcode": "089686043419",
+        "category": "Makanan",
+        "priceRetail": 3500,
+        "priceWholesale": 3000,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "SUPERMI SOP BUNTUT",
+        "sku": "089686044072",
+        "barcode": "089686044072",
+        "category": "Umum",
+        "priceRetail": 3500,
+        "priceWholesale": 3000,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "SARIMI ISI2 AYAM KECAP",
+        "sku": "089686048704",
+        "barcode": "089686048704",
+        "category": "Makanan",
+        "priceRetail": 6500,
+        "priceWholesale": 5800,
+        "stock": 24,
+        "min_stock": 6
+      },
+      {
+        "name": "BUMBU RACIK NASI GORENG",
+        "sku": "089686386011",
+        "barcode": "089686386011",
+        "category": "Makanan",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "BUMBU RACIK AYAM GORENG 26G",
+        "sku": "089686386066",
+        "barcode": "089686386066",
+        "category": "Makanan",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "BUMBU RACIK SAYUR ASEM",
+        "sku": "089686386110",
+        "barcode": "089686386110",
+        "category": "Makanan",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "BUMBU RACIK TUMIS",
+        "sku": "089686386219",
+        "barcode": "089686386219",
+        "category": "Makanan",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "BUMBU RACIK SAYUR SOP 20G",
+        "sku": "089686386318",
+        "barcode": "089686386318",
+        "category": "Makanan",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "BUMBU RACIK IKAN GORENG",
+        "sku": "089686386462",
+        "barcode": "089686386462",
+        "category": "Makanan",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "BUMBU INDOFOOD KARE",
+        "sku": "089686440133",
+        "barcode": "089686440133",
+        "category": "Makanan",
+        "priceRetail": 4000,
+        "priceWholesale": 3500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "BUMBU INDOFOOD RAWON",
+        "sku": "089686440386",
+        "barcode": "089686440386",
+        "category": "Makanan",
+        "priceRetail": 4000,
+        "priceWholesale": 3500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "BUMBU INDOFOOD SOTO AYAM",
+        "sku": "089686440584",
+        "barcode": "089686440584",
+        "category": "Makanan",
+        "priceRetail": 4000,
+        "priceWholesale": 3500,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "FREISS SIRUP MADU COCOPANDAN 500ML",
+        "sku": "089686834109",
+        "barcode": "089686834109",
+        "category": "Minuman",
+        "priceRetail": 25000,
+        "priceWholesale": 22000,
+        "stock": 20,
+        "min_stock": 5
+      },
+      {
+        "name": "FREISS SIRUP MADU FRAMBOZ 500ML",
+        "sku": "089686834154",
+        "barcode": "089686834154",
+        "category": "Minuman",
+        "priceRetail": 25000,
+        "priceWholesale": 22000,
+        "stock": 20,
+        "min_stock": 5
+      },
+      {
+        "name": "Sarung Tenun Cap Kuda",
+        "sku": "09098876567",
+        "barcode": "09098876567",
+        "category": "Umum",
+        "priceRetail": 150000,
+        "priceWholesale": 130000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "Sarung Tenun Cap Kadal",
+        "sku": "09098876568",
+        "barcode": "09098876568",
+        "category": "Umum",
+        "priceRetail": 150000,
+        "priceWholesale": 130000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "Sarung Tenun Cap Kampret",
+        "sku": "09098876569",
+        "barcode": "09098876569",
+        "category": "Umum",
+        "priceRetail": 150000,
+        "priceWholesale": 130000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "P/CASE BATIK JENIA",
+        "sku": "1000000163018",
+        "barcode": "1000000163018",
+        "category": "Umum",
+        "priceRetail": 75000,
+        "priceWholesale": 65000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "KEMBANG API OLYMPIC TORCH ISI 6",
+        "sku": "100000321034",
+        "barcode": "100000321034",
+        "category": "Umum",
+        "priceRetail": 15000,
+        "priceWholesale": 12000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "KAOS KAKI BALMORAL TIPIS",
+        "sku": "100125268887",
+        "barcode": "100125268887",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "STARWAY KAOS KAKI 159",
+        "sku": "1003020211219",
+        "barcode": "1003020211219",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "SATTO SLIM ESSENCE 55G",
+        "sku": "10064002",
+        "barcode": "10064002",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "SARIMI AYAM",
+        "sku": "1008968601770",
+        "barcode": "1008968601770",
+        "category": "Makanan",
+        "priceRetail": 3500,
+        "priceWholesale": 3000,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "SARIMI  AYAM GORENG",
+        "sku": "1008968604870",
+        "barcode": "1008968604870",
+        "category": "Makanan",
+        "priceRetail": 4000,
+        "priceWholesale": 3500,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "POP MIE MINI RS AYAM BAWANG",
+        "sku": "1008968606102",
+        "barcode": "1008968606102",
+        "category": "Makanan",
+        "priceRetail": 4000,
+        "priceWholesale": 3500,
+        "stock": 60,
+        "min_stock": 15
+      },
+      {
+        "name": "SARIM SOTO KOYA DUS",
+        "sku": "10089686917267",
+        "barcode": "10089686917267",
+        "category": "Makanan",
+        "priceRetail": 3500,
+        "priceWholesale": 3000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "STAR SLICED JALAPENOS 1QT",
+        "sku": "101110700238",
+        "barcode": "101110700238",
+        "category": "Umum",
+        "priceRetail": 35000,
+        "priceWholesale": 30000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "SPIDOL STAMP MICKEY",
+        "sku": "10113000013",
+        "barcode": "10113000013",
+        "category": "Umum",
+        "priceRetail": 8000,
+        "priceWholesale": 7000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "MAP FILE CAMPUS JOYKO A5",
+        "sku": "10139000002",
+        "barcode": "10139000002",
+        "category": "Alat Tulis",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SANDAL ANDO",
+        "sku": "1014100001656",
+        "barcode": "1014100001656",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "VOS L LEAF A5 50",
+        "sku": "102000116006",
+        "barcode": "102000116006",
+        "category": "Umum",
+        "priceRetail": 7000,
+        "priceWholesale": 5500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "VOS L LEAF B5 100",
+        "sku": "102000116007",
+        "barcode": "102000116007",
+        "category": "Umum",
+        "priceRetail": 7000,
+        "priceWholesale": 5500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "E-PRINT RBON CARTG 8750",
+        "sku": "10343600096",
+        "barcode": "10343600096",
+        "category": "Umum",
+        "priceRetail": 85000,
+        "priceWholesale": 75000,
+        "stock": 5,
+        "min_stock": 2
+      },
+      {
+        "name": "EPSON RF 8758 ORG-17",
+        "sku": "10343600102",
+        "barcode": "10343600102",
+        "category": "Umum",
+        "priceRetail": 85000,
+        "priceWholesale": 75000,
+        "stock": 5,
+        "min_stock": 2
+      },
+      {
+        "name": "EPSON CARTRI 7754 KW2",
+        "sku": "10343600447",
+        "barcode": "10343600447",
+        "category": "Umum",
+        "priceRetail": 85000,
+        "priceWholesale": 75000,
+        "stock": 5,
+        "min_stock": 2
+      },
+      {
+        "name": "EPSON CARTID SO15140",
+        "sku": "10343601802",
+        "barcode": "10343601802",
+        "category": "Umum",
+        "priceRetail": 85000,
+        "priceWholesale": 75000,
+        "stock": 5,
+        "min_stock": 2
+      },
+      {
+        "name": "BUKU TEBAL NP",
+        "sku": "1050003200005",
+        "barcode": "1050003200005",
+        "category": "Alat Tulis",
+        "priceRetail": 8000,
+        "priceWholesale": 6500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "NOTES KOTAK NP",
+        "sku": "1050003800007",
+        "barcode": "1050003800007",
+        "category": "Umum",
+        "priceRetail": 8000,
+        "priceWholesale": 6500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "BUKU MEWARNAI DL 0337",
+        "sku": "1057011902273",
+        "barcode": "1057011902273",
+        "category": "Alat Tulis",
+        "priceRetail": 10000,
+        "priceWholesale": 8000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "BUKU MEWARNAI 2B 0407",
+        "sku": "1057011904079",
+        "barcode": "1057011904079",
+        "category": "Alat Tulis",
+        "priceRetail": 10000,
+        "priceWholesale": 8000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "CM GELAS SET 7PC AROMA C-1898",
+        "sku": "1070902154759",
+        "barcode": "1070902154759",
+        "category": "Umum",
+        "priceRetail": 50000,
+        "priceWholesale": 42000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "CM GELAS SET 6PC ROME 75007 RM",
+        "sku": "1070906118177",
+        "barcode": "1070906118177",
+        "category": "Umum",
+        "priceRetail": 50000,
+        "priceWholesale": 42000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "CM GELAS SET 7PC DRINKING C-1910",
+        "sku": "1070906121702",
+        "barcode": "1070906121702",
+        "category": "Umum",
+        "priceRetail": 50000,
+        "priceWholesale": 42000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "CM GELAS SET 7PC DREAMLIFE C-1981",
+        "sku": "1070906130964",
+        "barcode": "1070906130964",
+        "category": "Umum",
+        "priceRetail": 50000,
+        "priceWholesale": 42000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "HUGO BOS INTENSE WOMAN",
+        "sku": "1073705604",
+        "barcode": "1073705604",
+        "category": "Umum",
+        "priceRetail": 75000,
+        "priceWholesale": 65000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "REYNOLDS WRAP ALUMINIUM FOIL 8M.",
+        "sku": "10900300100",
+        "barcode": "10900300100",
+        "category": "Umum",
+        "priceRetail": 35000,
+        "priceWholesale": 30000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "REYNOLDS WRAP ALUMINIUM FOIL 16M.",
+        "sku": "10900300117",
+        "barcode": "10900300117",
+        "category": "Umum",
+        "priceRetail": 35000,
+        "priceWholesale": 30000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "REYNOLDS SAMPLER 5M",
+        "sku": "10900300131",
+        "barcode": "10900300131",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 22000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "DAIMOND SAMPLER 5M",
+        "sku": "10900300810",
+        "barcode": "10900300810",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 22000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "REYNOLDS ZIPPER STORAGE  MED (30)",
+        "sku": "10900302616",
+        "barcode": "10900302616",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 22000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "RAYNOLDS ZIPER FREZ 18GAL",
+        "sku": "10900302647",
+        "barcode": "10900302647",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "REYNOLDS CUT-RITE WAX PAPER 23M.",
+        "sku": "10900303309",
+        "barcode": "10900303309",
+        "category": "Umum",
+        "priceRetail": 28000,
+        "priceWholesale": 25000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "RAYNOLDS CUT-RITE WAX PAPER 4.64M2",
+        "sku": "10900303316",
+        "barcode": "10900303316",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "VB REFILL 7M",
+        "sku": "10900303477",
+        "barcode": "10900303477",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PULPEN AE 7",
+        "sku": "1100120010473",
+        "barcode": "1100120010473",
+        "category": "Alat Tulis",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "PULPEN AE 7 MERAH",
+        "sku": "1100120030471",
+        "barcode": "1100120030471",
+        "category": "Alat Tulis",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "MARTINI ROSSI 1LTR",
+        "sku": "11034410048",
+        "barcode": "11034410048",
+        "category": "Umum",
+        "priceRetail": 150000,
+        "priceWholesale": 130000,
+        "stock": 5,
+        "min_stock": 2
+      },
+      {
+        "name": "LEM CASTOL KECIL",
+        "sku": "11100416",
+        "barcode": "11100416",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "PASEO TISSUE SMART PARFUMED 6X12sct",
+        "sku": "11111111111",
+        "barcode": "11111111111",
+        "category": "Kosmetik",
+        "priceRetail": 35000,
+        "priceWholesale": 30000,
+        "stock": 18,
+        "min_stock": 5
+      },
+      {
+        "name": "ALPO DOG BEEF & RICE 374G",
+        "sku": "11132000240",
+        "barcode": "11132000240",
+        "category": "Umum",
+        "priceRetail": 28000,
+        "priceWholesale": 25000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "ALPO CHICKEN CLASSIC CHUNKY 623G",
+        "sku": "11132000332",
+        "barcode": "11132000332",
+        "category": "Umum",
+        "priceRetail": 45000,
+        "priceWholesale": 40000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "ALPO BEEF CLASSIC CHUNKY 623G",
+        "sku": "11132000356",
+        "barcode": "11132000356",
+        "category": "Umum",
+        "priceRetail": 45000,
+        "priceWholesale": 40000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "ALPO TRIO CLASSIC CHUNKY 623G",
+        "sku": "11132000363",
+        "barcode": "11132000363",
+        "category": "Umum",
+        "priceRetail": 45000,
+        "priceWholesale": 40000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "ALPO DOG BEEF & LIVER 374G",
+        "sku": "11132003616",
+        "barcode": "11132003616",
+        "category": "Umum",
+        "priceRetail": 28000,
+        "priceWholesale": 25000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "ALPO DOG CHICKEN 374G",
+        "sku": "11132003623",
+        "barcode": "11132003623",
+        "category": "Umum",
+        "priceRetail": 28000,
+        "priceWholesale": 25000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "ALPO TOP SIRLOIN 374G",
+        "sku": "11132108359",
+        "barcode": "11132108359",
+        "category": "Umum",
+        "priceRetail": 28000,
+        "priceWholesale": 25000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "ALPO FILEDMIGNON 374G",
+        "sku": "11132108403",
+        "barcode": "11132108403",
+        "category": "Umum",
+        "priceRetail": 28000,
+        "priceWholesale": 25000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "ALPO ROASTED CHICKEN 374G",
+        "sku": "11132108601",
+        "barcode": "11132108601",
+        "category": "Umum",
+        "priceRetail": 28000,
+        "priceWholesale": 25000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "ALPO CHOP HOUSE RIBEYE 374G",
+        "sku": "11132117559",
+        "barcode": "11132117559",
+        "category": "Umum",
+        "priceRetail": 28000,
+        "priceWholesale": 25000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "ALPO PRIME CUTS 623G BEEF",
+        "sku": "11132125189",
+        "barcode": "11132125189",
+        "category": "Umum",
+        "priceRetail": 45000,
+        "priceWholesale": 40000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "ALPO PRIME CUTS 623G LAMB&RICE",
+        "sku": "11132125479",
+        "barcode": "11132125479",
+        "category": "Umum",
+        "priceRetail": 45000,
+        "priceWholesale": 40000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "MOREHOUSE MUSTARD 567G",
+        "sku": "11209002207",
+        "barcode": "11209002207",
+        "category": "Umum",
+        "priceRetail": 85000,
+        "priceWholesale": 75000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "TABASCO RED PEPPER SAUCE 60ML.",
+        "sku": "11210000018",
+        "barcode": "11210000018",
+        "category": "Umum",
+        "priceRetail": 35000,
+        "priceWholesale": 30000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "TABASCO RED PEPPER SAUCE 150ML.",
+        "sku": "11210000155",
+        "barcode": "11210000155",
+        "category": "Umum",
+        "priceRetail": 55000,
+        "priceWholesale": 48000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "TABASCO RED PEPPER SAUCE 350ML",
+        "sku": "1121000032",
+        "barcode": "1121000032",
+        "category": "Umum",
+        "priceRetail": 85000,
+        "priceWholesale": 75000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "TABASCO 60ML HARBANERO HOT",
+        "sku": "11210006508",
+        "barcode": "11210006508",
+        "category": "Umum",
+        "priceRetail": 35000,
+        "priceWholesale": 30000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "TABASCO 60ML GARLICPEPPER",
+        "sku": "11210007253",
+        "barcode": "11210007253",
+        "category": "Umum",
+        "priceRetail": 35000,
+        "priceWholesale": 30000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "TABASCO 60ML GREENPEPPER MILD",
+        "sku": "11210009387",
+        "barcode": "11210009387",
+        "category": "Umum",
+        "priceRetail": 35000,
+        "priceWholesale": 30000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "TYL ASSORTED CANDIES 320G",
+        "sku": "1123456123456",
+        "barcode": "1123456123456",
+        "category": "Umum",
+        "priceRetail": 15000,
+        "priceWholesale": 12000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "PONDS COMP BC 68G",
+        "sku": "1162828537133",
+        "barcode": "1162828537133",
+        "category": "Umum",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "FINNA 300G RASEDA KRUPUK UDANG",
+        "sku": "11747168038",
+        "barcode": "11747168038",
+        "category": "Umum",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DUA KELINCI100G",
+        "sku": "11747233026",
+        "barcode": "11747233026",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DUA KELINCI KACANG GARINGPCK 250g",
+        "sku": "11747233033",
+        "barcode": "11747233033",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 22000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DUA KELINCI KC KULIT 500 GR",
+        "sku": "11747233040",
+        "barcode": "11747233040",
+        "category": "Umum",
+        "priceRetail": 45000,
+        "priceWholesale": 40000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KACANG DUA KELINCI 1000 GR",
+        "sku": "11747233057",
+        "barcode": "11747233057",
+        "category": "Umum",
+        "priceRetail": 45000,
+        "priceWholesale": 40000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "REGE KCG ATOM 65G",
+        "sku": "11747233125",
+        "barcode": "11747233125",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DOUBLE RABBIT KACANG KULIT 500G",
+        "sku": "11747233897",
+        "barcode": "11747233897",
+        "category": "Umum",
+        "priceRetail": 45000,
+        "priceWholesale": 40000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SARI GURIH 100G",
+        "sku": "11747233934",
+        "barcode": "11747233934",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "SARI GURIH 250G",
+        "sku": "11747233941",
+        "barcode": "11747233941",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 22000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DK KACANG GARING 36GR",
+        "sku": "11747233965",
+        "barcode": "11747233965",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "SUKRO KACANG ATOM 43G",
+        "sku": "11747233972",
+        "barcode": "11747233972",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DOLPHIN GARAM MEJA 250G",
+        "sku": "11747234160",
+        "barcode": "11747234160",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "GARAM KUALI 500G",
+        "sku": "11747234177",
+        "barcode": "11747234177",
+        "category": "Umum",
+        "priceRetail": 7000,
+        "priceWholesale": 6000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "GARAM KUALI 250G",
+        "sku": "11747234184",
+        "barcode": "11747234184",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DOLPHIN GARAM MEJA 500G",
+        "sku": "11747234191",
+        "barcode": "11747234191",
+        "category": "Umum",
+        "priceRetail": 7000,
+        "priceWholesale": 6000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DOLPHIN GARAM MEJA 1KG",
+        "sku": "11747234207",
+        "barcode": "11747234207",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 20,
+        "min_stock": 5
+      },
+      {
+        "name": "DOLPHIN GARAM MEJA 200G",
+        "sku": "117472342177",
+        "barcode": "117472342177",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DOLPHIN GARAM MEJA 450G",
+        "sku": "117472342276",
+        "barcode": "117472342276",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "GARAM CAP LAYAR 250G",
+        "sku": "11747234771",
+        "barcode": "11747234771",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DK KCG SHANGHAI 450G TP",
+        "sku": "11747234825",
+        "barcode": "11747234825",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "The Naga",
+        "sku": "11747235518",
+        "barcode": "11747235518",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MR FOOD 100G TEPUNG DAWET PANDAN",
+        "sku": "11747236737",
+        "barcode": "11747236737",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "MR FOOD 100G TEPUNG DAWET FRAMBOZEN",
+        "sku": "11747236744",
+        "barcode": "11747236744",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "MR FOOD 100G TEPUNG DAWET VANILA",
+        "sku": "11747236751",
+        "barcode": "11747236751",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "MR FOOD 137G PD ALMOND",
+        "sku": "11747237604",
+        "barcode": "11747237604",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MR FOOD 137G PD CAPUCINO",
+        "sku": "11747237611",
+        "barcode": "11747237611",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MR FOOD 137G PD CHOCOLATE",
+        "sku": "11747237628",
+        "barcode": "11747237628",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "MR FOOD 137G PD MANGGA",
+        "sku": "11747237635",
+        "barcode": "11747237635",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MR FOOD 137G PD STRAWBERRY",
+        "sku": "11747237659",
+        "barcode": "11747237659",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TING TING JAHE 8`S",
+        "sku": "11747616058",
+        "barcode": "11747616058",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "DOUBLE RABBIT KACANG KULIT 250G",
+        "sku": "11747619011",
+        "barcode": "11747619011",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 22000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DOUBLE RABBIT KACANG KULIT 100G",
+        "sku": "11747619028",
+        "barcode": "11747619028",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "MERICA KAPAL BINTAN 250G",
+        "sku": "1180272778888",
+        "barcode": "1180272778888",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MERICA KAPAL BINTAN 50G",
+        "sku": "1180272779889",
+        "barcode": "1180272779889",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MERICA KAPAL BINTAN 100G",
+        "sku": "1180272779988",
+        "barcode": "1180272779988",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MERICA KAPAL BINTAN 150G",
+        "sku": "1180273779999",
+        "barcode": "1180273779999",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BUKU KAS GALAKSI 17423",
+        "sku": "120080074958",
+        "barcode": "120080074958",
+        "category": "Alat Tulis",
+        "priceRetail": 8000,
+        "priceWholesale": 6500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "PULPEN ACTION STANDARD",
+        "sku": "1201720010471",
+        "barcode": "1201720010471",
+        "category": "Alat Tulis",
+        "priceRetail": 3000,
+        "priceWholesale": 2500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SNOWMAN AE7 BIRU",
+        "sku": "122102",
+        "barcode": "122102",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "BINDER",
+        "sku": "1221868647018",
+        "barcode": "1221868647018",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ROL RAMBUT AKIO KECIL",
+        "sku": "12300280",
+        "barcode": "12300280",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ROLL RAMBUT AKIO SEDANG",
+        "sku": "12300297",
+        "barcode": "12300297",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "P/CASE MAGNET 1872",
+        "sku": "123456789888",
+        "barcode": "123456789888",
+        "category": "Umum",
+        "priceRetail": 75000,
+        "priceWholesale": 65000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "KWITANSI NCR R2 BAMBU",
+        "sku": "1254644417833",
+        "barcode": "1254644417833",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BUKU BUKTI KAS BAMBU",
+        "sku": "1254644417857",
+        "barcode": "1254644417857",
+        "category": "Alat Tulis",
+        "priceRetail": 8000,
+        "priceWholesale": 6500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SURAT JALAN NCR BR3 BAMBU",
+        "sku": "1254644513795",
+        "barcode": "1254644513795",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BODIES CK SILVER MINI",
+        "sku": "126514093003",
+        "barcode": "126514093003",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BODIES RALPH BLUE MINI",
+        "sku": "126514093007",
+        "barcode": "126514093007",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BODIES INTUITION KUNING MINI",
+        "sku": "126514093008",
+        "barcode": "126514093008",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BODIES TOMMYJADORE PUTIH MINI",
+        "sku": "126514093014",
+        "barcode": "126514093014",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BODIES POLO BLUE MINI",
+        "sku": "126514093021",
+        "barcode": "126514093021",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BODIES PLEASURE ORANGE MINI",
+        "sku": "126514093045",
+        "barcode": "126514093045",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "DUPA LOTUS",
+        "sku": "1272412000513",
+        "barcode": "1272412000513",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "HEINZ VINEGAR APPLE CIDER 946ML",
+        "sku": "13000008143",
+        "barcode": "13000008143",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BLUE ORBS FLASH D 2GB",
+        "sku": "1314168188982",
+        "barcode": "1314168188982",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "STM LONGAN 565gr",
+        "sku": "13256001059",
+        "barcode": "13256001059",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN PISTACHIOS 40G",
+        "sku": "13256010402",
+        "barcode": "13256010402",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN PEANUT SALTED 40G",
+        "sku": "13256110515",
+        "barcode": "13256110515",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN KC SHANDONG 180G",
+        "sku": "13256111802",
+        "barcode": "13256111802",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN PEANUT SALTED 200G",
+        "sku": "13256112007",
+        "barcode": "13256112007",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "NO.1 SALTED CASHEWNUTS 180G",
+        "sku": "13256211878",
+        "barcode": "13256211878",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN CSNUT HONEY 40G",
+        "sku": "13256220412",
+        "barcode": "13256220412",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN PISTACHIOS 90G",
+        "sku": "13256281017",
+        "barcode": "13256281017",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "NO.1 SALTED PISTACHIOS 180G",
+        "sku": "13256281871",
+        "barcode": "13256281871",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN PISTACHIOS 180G",
+        "sku": "13256282007",
+        "barcode": "13256282007",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN PISTACHIOS 400G",
+        "sku": "13256284001",
+        "barcode": "13256284001",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN PARTY SNACK 40G",
+        "sku": "13256510414",
+        "barcode": "13256510414",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN PARTY SNACK 80G",
+        "sku": "13256511008",
+        "barcode": "13256511008",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN MIXED NUTS 400G",
+        "sku": "13256514092",
+        "barcode": "13256514092",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN MIXED NUTS 500G",
+        "sku": "13256515006",
+        "barcode": "13256515006",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN BROAD BEANS CHILI 120G",
+        "sku": "13256621202",
+        "barcode": "13256621202",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TONG GARDEN BROAD BEANS ONION120G",
+        "sku": "13256621219",
+        "barcode": "13256621219",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LEM HIGH POWER 210",
+        "sku": "138802027177",
+        "barcode": "138802027177",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "R RM SENTER TOYOSAKI TL1500",
+        "sku": "1410901020226",
+        "barcode": "1410901020226",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU TOYOSAKY LED 3W",
+        "sku": "1411602060016",
+        "barcode": "1411602060016",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU TOYOSAKY LED 5W",
+        "sku": "1411602060023",
+        "barcode": "1411602060023",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU TOYOSAKY LED 8W",
+        "sku": "1411602060030",
+        "barcode": "1411602060030",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU TOYOSAKY LED 10W",
+        "sku": "1411602060054",
+        "barcode": "1411602060054",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SNOWTIME ICE POPS 900ML",
+        "sku": "14163123414",
+        "barcode": "14163123414",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC HOT SAUCE 90G",
+        "sku": "14285000013",
+        "barcode": "14285000013",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC BANANA CATSUP 320G",
+        "sku": "14285000068",
+        "barcode": "14285000068",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC BANANA CATSUP 550G",
+        "sku": "14285000075",
+        "barcode": "14285000075",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC SWEET CHILI SAUCE 340G",
+        "sku": "14285000891",
+        "barcode": "14285000891",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC GOLDEN FIESTA COOKING OIL 485ML",
+        "sku": "14285000914",
+        "barcode": "14285000914",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC GOLDEN FIESTA 950ML",
+        "sku": "14285000921",
+        "barcode": "14285000921",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC GOLDEN FIESTA COOK OIL POUCH 250ML",
+        "sku": "14285000945",
+        "barcode": "14285000945",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC BANANA CATSUP 4KG",
+        "sku": "14285001102",
+        "barcode": "14285001102",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC BANANA CATSUP 2KG",
+        "sku": "14285001119",
+        "barcode": "14285001119",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC SPAG SAUCE 1KG",
+        "sku": "14285001935",
+        "barcode": "14285001935",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "HEINZ TOMATO SAUCE POUCH 1KG",
+        "sku": "14285001980",
+        "barcode": "14285001980",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "HEINZ SPAG SAUCE POUCH 750G",
+        "sku": "14285001997",
+        "barcode": "14285001997",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC TOMATO SAUCE SFB 200G",
+        "sku": "14285002376",
+        "barcode": "14285002376",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC BANANA CATSUP 100G",
+        "sku": "14285002789",
+        "barcode": "14285002789",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PAPA PLUS BANANA CATSUP 1KG",
+        "sku": "14285003038",
+        "barcode": "14285003038",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC BANANA CATSUP 1KG",
+        "sku": "14285003045",
+        "barcode": "14285003045",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "UFC TOMATO SAUCE SFB 115G",
+        "sku": "14285003076",
+        "barcode": "14285003076",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BINACA PEPPERMINT BREATH SPRAY 5.67G",
+        "sku": "14657511024",
+        "barcode": "14657511024",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BINACA PEPPERMINT BREATH SPRAY 15ML",
+        "sku": "14657812015",
+        "barcode": "14657812015",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LOOS LEAF B5 100 MIDORI",
+        "sku": "1471003445645",
+        "barcode": "1471003445645",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PENJEPIT BULI MATA BESI GLENCO",
+        "sku": "14779000888",
+        "barcode": "14779000888",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FOOD WRAP CLING 30M",
+        "sku": "14800017880304",
+        "barcode": "14800017880304",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "NESTEA BLAST ORANGE 200ML",
+        "sku": "14800602073593",
+        "barcode": "14800602073593",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER TROPICAL PAPAYA 113G",
+        "sku": "15000024444",
+        "barcode": "15000024444",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER TROPICAL MANGO 113G",
+        "sku": "15000024475",
+        "barcode": "15000024475",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER BROCCOLI&CAROT 170G",
+        "sku": "15000026219",
+        "barcode": "15000026219",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER APPLE BANANA 170G",
+        "sku": "15000026370",
+        "barcode": "15000026370",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER PEACH COBBLER 170G",
+        "sku": "15000026431",
+        "barcode": "15000026431",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER FRUIT SALAD 170G",
+        "sku": "15000026448",
+        "barcode": "15000026448",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER GREEN BEANS 71G",
+        "sku": "15000049126",
+        "barcode": "15000049126",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER SWEET POTATO 71G",
+        "sku": "15000049188",
+        "barcode": "15000049188",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER PEACHES 71G",
+        "sku": "15000049300",
+        "barcode": "15000049300",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER PERAS 71G",
+        "sku": "15000049348",
+        "barcode": "15000049348",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GERBER BANANAS 71G",
+        "sku": "15000049355",
+        "barcode": "15000049355",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BUKU MEWARNAI K BAMBU",
+        "sku": "1522633301501",
+        "barcode": "1522633301501",
+        "category": "Alat Tulis",
+        "priceRetail": 10000,
+        "priceWholesale": 8000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "RIVANOL ATI LTS OBT KOM 300 ML",
+        "sku": "1587692455664",
+        "barcode": "1587692455664",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "RIVANOL ATI LTS OBT KOM 100 ML",
+        "sku": "1587698951245",
+        "barcode": "1587698951245",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETTY CROCKER COMPLETE CINNAMON SWIRL 219G",
+        "sku": "16000135307",
+        "barcode": "16000135307",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETTY CROCKER BUTTERMILK 212G",
+        "sku": "16000135406",
+        "barcode": "16000135406",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CHOCOLATE CHIP 496G",
+        "sku": "16000306509",
+        "barcode": "16000306509",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "BETTY CROCKER OATMEAL CHOC CHIP 496G",
+        "sku": "16000307902",
+        "barcode": "16000307902",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETTY CROCKER BAC-OS BITS 125G",
+        "sku": "16000319103",
+        "barcode": "16000319103",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FRUIT ROLL-UPS BLASTIN BERRY 141G",
+        "sku": "16000355101",
+        "barcode": "16000355101",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FRUIT ROLL-UPS STRAWBERRY 141G",
+        "sku": "16000355408",
+        "barcode": "16000355408",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "POP-SECRET JUMBO POP 298G",
+        "sku": "16000362703",
+        "barcode": "16000362703",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FRUIT ROLL-UPS TROPICAL TIE-DYE 141G",
+        "sku": "16000397002",
+        "barcode": "16000397002",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETTY CROCKER BAC-OS CHIPS 116G",
+        "sku": "16000400603",
+        "barcode": "16000400603",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETTY CROCKER WILD BLUEBERRY 517G",
+        "sku": "16000428706",
+        "barcode": "16000428706",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETTY CROCKER SUPERMOIST DEVILS FOOD 517G",
+        "sku": "16000432307",
+        "barcode": "16000432307",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETTY CROCKER SUPERMOIST CHOCO FUDGE 517G",
+        "sku": "16000436008",
+        "barcode": "16000436008",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETTY CROCKER SUPERMOIST BUTTER YELLOW 517G",
+        "sku": "16000439504",
+        "barcode": "16000439504",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "POP SECRET BUTTER 94% FAT FREE",
+        "sku": "1600045170",
+        "barcode": "1600045170",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "POP-SECRET BUTTER 255G",
+        "sku": "16000451704",
+        "barcode": "16000451704",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "POP SECRET MOVIE THEATRE BUTTER 3.5OZ",
+        "sku": "16000576902",
+        "barcode": "16000576902",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SOFLYNA KRIPIK KAKI AYAM 35 GR",
+        "sku": "1601200311003",
+        "barcode": "1601200311003",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SOFLYNA USUS TEPUNG 100 GR",
+        "sku": "1601200311287",
+        "barcode": "1601200311287",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SOFLYNA KRP KENTANG UDANG",
+        "sku": "1601200311706",
+        "barcode": "1601200311706",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SOFLYNA KRIPIK KAKI AYAM 70 GR",
+        "sku": "1601200312000",
+        "barcode": "1601200312000",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SOFLYNA USUS TANPA TEPUNG 35 G",
+        "sku": "1601200313007",
+        "barcode": "1601200313007",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SOFLYNA  USUS TEPUNG 50 GR",
+        "sku": "1601200315001",
+        "barcode": "1601200315001",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SOFLYNA  K.USUS TANPA TEPUNG 70G",
+        "sku": "1601200318002",
+        "barcode": "1601200318002",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "SENTRALE KABEL BOX 6 MTR",
+        "sku": "161116324227",
+        "barcode": "161116324227",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MATERAI",
+        "sku": "1626798410",
+        "barcode": "1626798410",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LUGGA",
+        "sku": "1628112990607",
+        "barcode": "1628112990607",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "POPEYE S-STRING POTATOES 46G",
+        "sku": "16700485177",
+        "barcode": "16700485177",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CAMEO LIPSTIK",
+        "sku": "1689999707961",
+        "barcode": "1689999707961",
+        "category": "Kosmetik",
+        "priceRetail": 20000,
+        "priceWholesale": 17000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "PETIS BUMBU CAP DUA KUALI 250G",
+        "sku": "16915201",
+        "barcode": "16915201",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 50,
+        "min_stock": 13
+      },
+      {
+        "name": "DIARY SWEET LOVE (TG) KOTAK",
+        "sku": "172538908360",
+        "barcode": "172538908360",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "VINISI SUP JAGUNG RAJUNGAN 300G",
+        "sku": "1733268803043",
+        "barcode": "1733268803043",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "VINISI FRUIT COKTAIL 430G",
+        "sku": "1733288080134",
+        "barcode": "1733288080134",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "VINISI FRUIT COCKTAIL 840G",
+        "sku": "1733288080240",
+        "barcode": "1733288080240",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GUNDAR SPTBS",
+        "sku": "18182116673162",
+        "barcode": "18182116673162",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LEM BESI MERIKAN",
+        "sku": "1826923120002",
+        "barcode": "1826923120002",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "M 150/10PCS",
+        "sku": "18851123212038",
+        "barcode": "18851123212038",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ABD GELAS SET ELEGENT H11 KIG",
+        "sku": "188629318911",
+        "barcode": "188629318911",
+        "category": "Umum",
+        "priceRetail": 50000,
+        "priceWholesale": 42000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "SEAGULL/PHARUM",
+        "sku": "18886012895283",
+        "barcode": "18886012895283",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KAPUR AJAIB",
+        "sku": "18886020033431",
+        "barcode": "18886020033431",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MILI BSR/1",
+        "sku": "18888140030093",
+        "barcode": "18888140030093",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ORAL B CLASIC",
+        "sku": "18888826016557",
+        "barcode": "18888826016557",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BESCO MAP PLST BC 101",
+        "sku": "1890055667896",
+        "barcode": "1890055667896",
+        "category": "Alat Tulis",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "REXONA DEO",
+        "sku": "18934868015024",
+        "barcode": "18934868015024",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FRENZ MILD",
+        "sku": "18970163288886",
+        "barcode": "18970163288886",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Indomilk Kaleng Putih 375g",
+        "sku": "18992702000015",
+        "barcode": "18992702000015",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Susu Enak Kaleng  putih 375g",
+        "sku": "18992702000022",
+        "barcode": "18992702000022",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Indomilk Melon 190ml",
+        "sku": "18992702006000",
+        "barcode": "18992702006000",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "VIT GELAS 240 ML",
+        "sku": "18992752981071",
+        "barcode": "18992752981071",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Frisian Flag 115ml",
+        "sku": "18992753016591",
+        "barcode": "18992753016591",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "KIT W&GLOW/SHCET",
+        "sku": "18992779267703",
+        "barcode": "18992779267703",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Kit Motor Multiguna",
+        "sku": "18992779269209",
+        "barcode": "18992779269209",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BETADINE/1S",
+        "sku": "18992843992012",
+        "barcode": "18992843992012",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SWALLOW POWDER",
+        "sku": "18992855888181",
+        "barcode": "18992855888181",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Susu Indomilk Cokelat 190 ml",
+        "sku": "18993007000236",
+        "barcode": "18993007000236",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Indomilk Stroberi 190 ml",
+        "sku": "18993007000250",
+        "barcode": "18993007000250",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Kremer 375g",
+        "sku": "18993007001257",
+        "barcode": "18993007001257",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Kremet Kaleng 500g",
+        "sku": "18993007002933",
+        "barcode": "18993007002933",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "TEH BENDERA",
+        "sku": "18993055000502",
+        "barcode": "18993055000502",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "CHARM NIGHT 1PS",
+        "sku": "18993189270680",
+        "barcode": "18993189270680",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "POKO 1PS",
+        "sku": "18993189270796",
+        "barcode": "18993189270796",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "POKO XL 1",
+        "sku": "18993189270833",
+        "barcode": "18993189270833",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "lilin Batang Popular",
+        "sku": "18993379260078",
+        "barcode": "18993379260078",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KOPI CUP CAPPUCINO",
+        "sku": "18996001600181",
+        "barcode": "18996001600181",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "PIATTOS RASA AYAM 12GR",
+        "sku": "1899619600080",
+        "barcode": "1899619600080",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "Piatos Rasa Ayam teriyaki",
+        "sku": "18996196003200",
+        "barcode": "18996196003200",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "ALOE VERA 350ML JERUK",
+        "sku": "18997004700151",
+        "barcode": "18997004700151",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ALOE VERA 350ML BLACKCURRANT",
+        "sku": "18997004700175",
+        "barcode": "18997004700175",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TORPEDO CUP",
+        "sku": "1899700730001",
+        "barcode": "1899700730001",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MILKUAT BTL ORANGE 70 ML",
+        "sku": "1899701006010",
+        "barcode": "1899701006010",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MILKUAT FRUITEA BTL 70ML",
+        "sku": "1899701106000",
+        "barcode": "1899701106000",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MILKUAT BTL STWBERY 70 ML",
+        "sku": "1899701106020",
+        "barcode": "1899701106020",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BERLIAN 500G",
+        "sku": "18997018960056",
+        "barcode": "18997018960056",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Salicyl Ika Talk 80gr Menthol",
+        "sku": "18997050801505",
+        "barcode": "18997050801505",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Susu Ultramilk Cokelat 250ml",
+        "sku": "18998009010238",
+        "barcode": "18998009010238",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Ultramilk Stroberi 250ml",
+        "sku": "18998009010245",
+        "barcode": "18998009010245",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Ultramilk Full Cream 200ml",
+        "sku": "18998009010559",
+        "barcode": "18998009010559",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Ultra Milk Cokelat 200ml",
+        "sku": "18998009010566",
+        "barcode": "18998009010566",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Ultramilk Stroberi 200ml",
+        "sku": "18998009010573",
+        "barcode": "18998009010573",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Susu Ultramilk Full Cream",
+        "sku": "18998009010610",
+        "barcode": "18998009010610",
+        "category": "Minuman",
+        "priceRetail": 15000,
+        "priceWholesale": 13000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "Bedak Cussons Baby 350g",
+        "sku": "18998103000609",
+        "barcode": "18998103000609",
+        "category": "Kosmetik",
+        "priceRetail": 20000,
+        "priceWholesale": 17000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "Sikat Gigi Ciptadent Medium",
+        "sku": "18998866103968",
+        "barcode": "18998866103968",
+        "category": "Kosmetik",
+        "priceRetail": 20000,
+        "priceWholesale": 17000,
+        "stock": 12,
+        "min_stock": 3
+      },
+      {
+        "name": "Hand Body Emeron 200ml Pink",
+        "sku": "18998866104798",
+        "barcode": "18998866104798",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Wing Dangdut Jeruk",
+        "sku": "18998866601143",
+        "barcode": "18998866601143",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Wing Dangdut DDJ400B",
+        "sku": "18998866602379",
+        "barcode": "18998866602379",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Wing Dangdut DDM400",
+        "sku": "18998866604212",
+        "barcode": "18998866604212",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SOFTENER 1XBLS SCH",
+        "sku": "18998866608398",
+        "barcode": "18998866608398",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Wing Dangdut DDP 400",
+        "sku": "18998866608845",
+        "barcode": "18998866608845",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "HANSAPLAST",
+        "sku": "18999777026370",
+        "barcode": "18999777026370",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS SKIN FIRMING MOIST 310ML",
+        "sku": "19100002074",
+        "barcode": "19100002074",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS UH HEALS&SOFTENS MOIST 709ML",
+        "sku": "19100002173",
+        "barcode": "19100002173",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS SKIN FIRMING MOISTURIZER 458ML",
+        "sku": "19100005204",
+        "barcode": "19100005204",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS SS GENTLY EXFOLIATES DRY 709ML",
+        "sku": "19100007246",
+        "barcode": "19100007246",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS OS HEALS&SOFTENS MOIST 709ML",
+        "sku": "19100007611",
+        "barcode": "19100007611",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS SAR SOOT RELIEF W/ALOE 709ML",
+        "sku": "19100007642",
+        "barcode": "19100007642",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS ADM-V DIMINISHES SIGNS 709ML",
+        "sku": "19100007659",
+        "barcode": "19100007659",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS BATH SOAP 127G",
+        "sku": "19100008793",
+        "barcode": "19100008793",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JERGENS SKIN FIRMING BW 295ML",
+        "sku": "19100008984",
+        "barcode": "19100008984",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU KRIPTON LED 3W",
+        "sku": "1910202060056",
+        "barcode": "1910202060056",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU KRIPTON LED 5W",
+        "sku": "1910202060063",
+        "barcode": "1910202060063",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU KRIPTON LED 7W",
+        "sku": "1910202060070",
+        "barcode": "1910202060070",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU KRIPTON LED 9W",
+        "sku": "1910202060087",
+        "barcode": "1910202060087",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MINYAK TAWON DD",
+        "sku": "1916848847",
+        "barcode": "1916848847",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "CRICKET/50S",
+        "sku": "19555143600118",
+        "barcode": "19555143600118",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CLEAR PUMP 500 ML BLUE",
+        "sku": "1981572251405",
+        "barcode": "1981572251405",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KERUPUK PELANGI METRO 200G",
+        "sku": "1999110511768",
+        "barcode": "1999110511768",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KERUPUK UDANG MINI 888 200G",
+        "sku": "1999110511775",
+        "barcode": "1999110511775",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KERUPUK CERIMPING PEDAS 88",
+        "sku": "1999110511850",
+        "barcode": "1999110511850",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KERUPUK BAWANG BJ",
+        "sku": "1999110512789",
+        "barcode": "1999110512789",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ERDBEER KONFITURE (STRAWBERRY JAM)",
+        "sku": "20000653",
+        "barcode": "20000653",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SOMMERBLUTEN HONIG GOLDKLAR 500G (HONEY)",
+        "sku": "20001049",
+        "barcode": "20001049",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CHOCO NUSSA 400G",
+        "sku": "20003548",
+        "barcode": "20003548",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BRATHERINGE HERRING 300G",
+        "sku": "20003753",
+        "barcode": "20003753",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FISHERSTOLZ HERRINGS IN TOMATO SAUCE 120G",
+        "sku": "20003876",
+        "barcode": "20003876",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PREISELBEEREN (CRANBERRY)",
+        "sku": "20004026",
+        "barcode": "20004026",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "STOLLENWERK HEIDELBEEREN (BLUEBERRY)",
+        "sku": "20004033",
+        "barcode": "20004033",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FG.SOSIS BAK (KUANG CIANG) 12'S",
+        "sku": "20005009",
+        "barcode": "20005009",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MAC JOER S DROPS",
+        "sku": "20006044",
+        "barcode": "20006044",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LINSEN EINTOPF MIT WURSTCHEN",
+        "sku": "20013837",
+        "barcode": "20013837",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BISKUAT PACK",
+        "sku": "20022903",
+        "barcode": "20022903",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Korek Gas Fox",
+        "sku": "2006121690920",
+        "barcode": "2006121690920",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FISCHERSTOLZ HERRING FILLETS IN TOMATEN SAUCE 200G",
+        "sku": "20101831",
+        "barcode": "20101831",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FISHERSTOLZ HERRING FILLET (PAPRIKA SAUCE)",
+        "sku": "20101848",
+        "barcode": "20101848",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FISHERHOLZ HERRING FILLETS (SENF SAUCE)",
+        "sku": "20101855",
+        "barcode": "20101855",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "NOTA KONTAN NCR 2 PLY",
+        "sku": "201036369999",
+        "barcode": "201036369999",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Handbody Kriss Ungu 100 ml",
+        "sku": "201060601491",
+        "barcode": "201060601491",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Handbody Kriss Hijau 100 ml",
+        "sku": "201060601507",
+        "barcode": "201060601507",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Handbody Kriss Kuning 100 ml",
+        "sku": "201060601514",
+        "barcode": "201060601514",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CLIP BOARD CHOYA",
+        "sku": "2013061012019",
+        "barcode": "2013061012019",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BUKU JUZ 'AMMA B PR",
+        "sku": "2013100229101",
+        "barcode": "2013100229101",
+        "category": "Alat Tulis",
+        "priceRetail": 8000,
+        "priceWholesale": 6500,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "CARDIFF BENGKOANG 600 ML",
+        "sku": "2014001100006",
+        "barcode": "2014001100006",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GULA ARAFAH 1KG",
+        "sku": "20140203222529034997",
+        "barcode": "20140203222529034997",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "CARDIFF GOAT 600 ML",
+        "sku": "2015001100006",
+        "barcode": "2015001100006",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CARDIFF",
+        "sku": "2015001100007",
+        "barcode": "2015001100007",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KAOS KAKI MENDY",
+        "sku": "2015758000002",
+        "barcode": "2015758000002",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "SPIDOL CADWELL 12W",
+        "sku": "201632504",
+        "barcode": "201632504",
+        "category": "Umum",
+        "priceRetail": 8000,
+        "priceWholesale": 7000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "INTER X ZIPPER BAG",
+        "sku": "201632536",
+        "barcode": "201632536",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TEKA ODNER 601",
+        "sku": "201632547",
+        "barcode": "201632547",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "DAIYU ODNER 403 F BSR",
+        "sku": "201634438",
+        "barcode": "201634438",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LOOSE LEAF GRS KCL-25S",
+        "sku": "201634495",
+        "barcode": "201634495",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LABEL CD-R ECER-2S-POLOS",
+        "sku": "201635174",
+        "barcode": "201635174",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ODNER NAFA 1111 KWIT-TPS",
+        "sku": "201637297",
+        "barcode": "201637297",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ZIPPER DOC.BAG PIVOT A4 DF56-18",
+        "sku": "201637750",
+        "barcode": "201637750",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KIKY INDEX TELEPHONE",
+        "sku": "201637751",
+        "barcode": "201637751",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KIKY ODNER 403F GLOSS",
+        "sku": "201637752",
+        "barcode": "201637752",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "INTER X CARRY CASE",
+        "sku": "201637778",
+        "barcode": "201637778",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "EAGLE MAP F KCG TOMEX TX-309",
+        "sku": "201637789",
+        "barcode": "201637789",
+        "category": "Alat Tulis",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "BLOK NOTE OFFICIA/SRITI GRS",
+        "sku": "201637804",
+        "barcode": "201637804",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BAMBI ORGANIZER 7716",
+        "sku": "201637813",
+        "barcode": "201637813",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BAMBI ORGANIZER 8816",
+        "sku": "201637814",
+        "barcode": "201637814",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MAP F POLOS F4 KCG 1",
+        "sku": "201637821",
+        "barcode": "201637821",
+        "category": "Alat Tulis",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "KIM MAP F SNELH",
+        "sku": "201637853",
+        "barcode": "201637853",
+        "category": "Alat Tulis",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "KENKO RAUTAN SP-362",
+        "sku": "201637868",
+        "barcode": "201637868",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "INTER X MAP F CLEAR SLVS L A4-CMPR",
+        "sku": "201637870",
+        "barcode": "201637870",
+        "category": "Alat Tulis",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "DATA X CLEAR HOLDER V.10 A4/SOLID",
+        "sku": "201637897",
+        "barcode": "201637897",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LABEL KACA MEDIUM CMPR",
+        "sku": "201637912",
+        "barcode": "201637912",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LABEL KACA LARGE CMPR",
+        "sku": "201637913",
+        "barcode": "201637913",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BAG FILE CARRY FC 2 CM",
+        "sku": "201738091",
+        "barcode": "201738091",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BAG FILE CARRY FC 3 CM",
+        "sku": "201738092",
+        "barcode": "201738092",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KNORR BROTH CHICK 1KG",
+        "sku": "20185121",
+        "barcode": "20185121",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MAP BIND CAMPUS UGM A5/MAS",
+        "sku": "202662006",
+        "barcode": "202662006",
+        "category": "Alat Tulis",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "PAKET UJIAN STABILO C-ngrh",
+        "sku": "202752067",
+        "barcode": "202752067",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BAYGON JUMBO DB",
+        "sku": "203011537",
+        "barcode": "203011537",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MIE S MIE",
+        "sku": "203101043",
+        "barcode": "203101043",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "ZWITSAL NAT MILK HONEY PACK",
+        "sku": "203260652",
+        "barcode": "203260652",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "Z WITSAL",
+        "sku": "203260670",
+        "barcode": "203260670",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "AY 18",
+        "sku": "203270196",
+        "barcode": "203270196",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PI IGEON CP",
+        "sku": "203280254",
+        "barcode": "203280254",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "OO L",
+        "sku": "203291167",
+        "barcode": "203291167",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "VIVA FACE PWD KNG PENGTN 14gr",
+        "sku": "203300472",
+        "barcode": "203300472",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "VIVA COMPACT POWDR KNG LNGSAT 19gr",
+        "sku": "203300474",
+        "barcode": "203300474",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "RE EXONA M",
+        "sku": "203300743",
+        "barcode": "203300743",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "RIVANOL MOLEX 100ml",
+        "sku": "203312016",
+        "barcode": "203312016",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CB MODERN TABUNG",
+        "sku": "203312121",
+        "barcode": "203312121",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "P IGE",
+        "sku": "203410108",
+        "barcode": "203410108",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MUTIA VCO 150ml",
+        "sku": "204000041",
+        "barcode": "204000041",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MUTIA VCO 300ml",
+        "sku": "204000042",
+        "barcode": "204000042",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ZAITUN MASSAGE CREAM",
+        "sku": "204011396",
+        "barcode": "204011396",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "VIRJINT COCONUT OIL 100ml",
+        "sku": "204405482",
+        "barcode": "204405482",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "RENGGINAN KECIL",
+        "sku": "204409992",
+        "barcode": "204409992",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRIPIK BAYAM 75GR",
+        "sku": "2045171022671",
+        "barcode": "2045171022671",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "TP UGM GUNUNGAN FIBER-1 PEN KECIL",
+        "sku": "205600078",
+        "barcode": "205600078",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JH RC PRIA MODEL JAS",
+        "sku": "205605885",
+        "barcode": "205605885",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PLAKAT UGM MODEL HP PRINT T.JAM",
+        "sku": "205646081",
+        "barcode": "205646081",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BP UGM BOSS TALI-pb",
+        "sku": "205648074",
+        "barcode": "205648074",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CLIP BOARD ENTER BNG",
+        "sku": "206036267",
+        "barcode": "206036267",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KAYAFIT KERIPIK NANGKA 50G",
+        "sku": "20660543",
+        "barcode": "20660543",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KAYAFIT KERIPIK MANGGA 50G",
+        "sku": "20660642",
+        "barcode": "20660642",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PIN UGM CAMPUR BSR-pudji",
+        "sku": "206609466",
+        "barcode": "206609466",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TAS UGM MIKRO SEDANG",
+        "sku": "206610088",
+        "barcode": "206610088",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TAS PUNGGUNG UGM SEMETRIS",
+        "sku": "206675073",
+        "barcode": "206675073",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JH UGM-semetris",
+        "sku": "206675078",
+        "barcode": "206675078",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ST FAKULTAS-kadece",
+        "sku": "206678057",
+        "barcode": "206678057",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PAYUNG UGM LPT 3-mahir",
+        "sku": "206688004",
+        "barcode": "206688004",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PAYUNG UGM LPT2-mahir",
+        "sku": "206688005",
+        "barcode": "206688005",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KALUNG ARAB-kalinyamat",
+        "sku": "206712012",
+        "barcode": "206712012",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BEAUTIFULL ACCESORIES",
+        "sku": "206731216",
+        "barcode": "206731216",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "ST DESTRO GELEM RA GELEM UGM-KCL2",
+        "sku": "20673729",
+        "barcode": "20673729",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "PAYUNG UGM LPT3",
+        "sku": "206776031",
+        "barcode": "206776031",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "GK UGM/FAK NEW-pratiknyo",
+        "sku": "206794017",
+        "barcode": "206794017",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "INDRI ACCESORIES",
+        "sku": "206803017",
+        "barcode": "206803017",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CLINIQUE HAPPY FOR MAN",
+        "sku": "20714080310",
+        "barcode": "20714080310",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CLINIQUE EYE SHADOW 213",
+        "sku": "207141633337",
+        "barcode": "207141633337",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PARFUM CLINIQUE HAPPY HEART",
+        "sku": "20714170486",
+        "barcode": "20714170486",
+        "category": "Kosmetik",
+        "priceRetail": 75000,
+        "priceWholesale": 65000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "HIGH ENDURANCE DRY CREAM FRESH 14G",
+        "sku": "20800306348",
+        "barcode": "20800306348",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SAFEGUARD ADVANTAGE CREAM STICK 14G",
+        "sku": "20800306379",
+        "barcode": "20800306379",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SECRET FLORAL BOUQUET 14G",
+        "sku": "20800309332",
+        "barcode": "20800309332",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SAFEGUARD ADVANTAGE SPORT 14G",
+        "sku": "20800309363",
+        "barcode": "20800309363",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SECRET PLATINUM PROTECTION 14G.",
+        "sku": "20800712705",
+        "barcode": "20800712705",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SAFEGUARD STICK ACTIVE FRESH 45G",
+        "sku": "20800715805",
+        "barcode": "20800715805",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "HIGH ENDURANCE 14G",
+        "sku": "20800718349",
+        "barcode": "20800718349",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SAFEGUARD ADVANTAGE FOREST FRESH 14G",
+        "sku": "20800721356",
+        "barcode": "20800721356",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SAFEGAUARD FLORAL BLOOM 14G.",
+        "sku": "20800721370",
+        "barcode": "20800721370",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT BALSAMIC VINAIGRETTE 473ML",
+        "sku": "21000002825",
+        "barcode": "21000002825",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT ITALIAN PESTO 473ML",
+        "sku": "21000002832",
+        "barcode": "21000002832",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT SUNDRIED TOAMATO 473ML",
+        "sku": "21000002849",
+        "barcode": "21000002849",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT CEASAR CLASSIC 473ML",
+        "sku": "21000323081",
+        "barcode": "21000323081",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT SINGLES (8) 170G",
+        "sku": "21000604593",
+        "barcode": "21000604593",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT SINGLES AMERICAN CHEESE 340G",
+        "sku": "21000604647",
+        "barcode": "21000604647",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT SINGLE 12S",
+        "sku": "21000604739",
+        "barcode": "21000604739",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT SINGLES 72S",
+        "sku": "21000604913",
+        "barcode": "21000604913",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT PHELADELPHIA 226G",
+        "sku": "21000612239",
+        "barcode": "21000612239",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT SINGLES SWISS CHEESE 170G",
+        "sku": "21000615001",
+        "barcode": "21000615001",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT ZESTY ITALIAN 473ML",
+        "sku": "21000641048",
+        "barcode": "21000641048",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT COLESLAW 237ML",
+        "sku": "21000644544",
+        "barcode": "21000644544",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT THOUSAND ISLE 237ML",
+        "sku": "21000644551",
+        "barcode": "21000644551",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT BLUE CHEESE 237ML",
+        "sku": "21000644612",
+        "barcode": "21000644612",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT THOUSAND ISLAND 473ML",
+        "sku": "21000644735",
+        "barcode": "21000644735",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT RANCH 237ML",
+        "sku": "21000646784",
+        "barcode": "21000646784",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT BBQ HONEY 510G",
+        "sku": "21000678402",
+        "barcode": "21000678402",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT HICKORY SMOKE 510G",
+        "sku": "21000678440",
+        "barcode": "21000678440",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT THICK N SPICY HONEY 510G",
+        "sku": "21000679225",
+        "barcode": "21000679225",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT ITAL VINGRT 473ML",
+        "sku": "21000682737",
+        "barcode": "21000682737",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KRAFT CEASAR W/BACON 473ML",
+        "sku": "21000686070",
+        "barcode": "21000686070",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "JURNAL GIZI KLINIK IND. VOL.4/3/08",
+        "sku": "210110050",
+        "barcode": "210110050",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MJL ELFATA N0 11 DES 2008",
+        "sku": "21060500",
+        "barcode": "21060500",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MJL HALAQAH NO1 AGT 2004",
+        "sku": "21060605",
+        "barcode": "21060605",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MJL UMMI 9",
+        "sku": "21060615",
+        "barcode": "21060615",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MJL SAKSI NO 10 2005",
+        "sku": "21060628",
+        "barcode": "21060628",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MJL FARSIGAMA",
+        "sku": "210606953",
+        "barcode": "210606953",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PETA LIPAT",
+        "sku": "210608998",
+        "barcode": "210608998",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "MARSH CRANBERRY SAUCE 454G",
+        "sku": "21110156128",
+        "barcode": "21110156128",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SCOTCH-BRITE HOUSEHOLD GLOVES M8-8 1/2",
+        "sku": "21200510083",
+        "barcode": "21200510083",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SCOTCH-BRITE HOUSEHOLD GLOVES L9",
+        "sku": "21200510090",
+        "barcode": "21200510090",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "BAWANG REAL FRIED ONIONS 100G",
+        "sku": "212207102412",
+        "barcode": "212207102412",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FORMOSA CLING WRAP",
+        "sku": "21223822",
+        "barcode": "21223822",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "IKAT PINGGANG COWOK-TA",
+        "sku": "21261302",
+        "barcode": "21261302",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "TOPI PET JARING",
+        "sku": "21274023",
+        "barcode": "21274023",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CELANA JEANS ARISTER",
+        "sku": "212749056",
+        "barcode": "212749056",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "KK STARWAY AP6-F6",
+        "sku": "212788082",
+        "barcode": "212788082",
+        "category": "Umum",
+        "priceRetail": 12000,
+        "priceWholesale": 10000,
+        "stock": 25,
+        "min_stock": 6
+      },
+      {
+        "name": "AURA FASHION-ERFO",
+        "sku": "212832002",
+        "barcode": "212832002",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "AURA FASHION-KMJ PDK",
+        "sku": "212832005",
+        "barcode": "212832005",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "AURA FASHION-KMJ PJG",
+        "sku": "212832006",
+        "barcode": "212832006",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "AURA FASHION-CLN/JEAN3/4",
+        "sku": "212832007",
+        "barcode": "212832007",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PAUL MASSON BURGANDY 1LT",
+        "sku": "21296604062",
+        "barcode": "21296604062",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PAUL MASSON CHABLIS 1LT",
+        "sku": "21296604130",
+        "barcode": "21296604130",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PELUBANG V.TEC NO.40",
+        "sku": "21300040",
+        "barcode": "21300040",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAMPU KRYPTOM 3U PLC 35W",
+        "sku": "215074443",
+        "barcode": "215074443",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "S/K ARDE T 3lb+SK YOSHIDA 633",
+        "sku": "215074451",
+        "barcode": "215074451",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SMART KABEL ROLL FULL 15m+SK",
+        "sku": "215074452",
+        "barcode": "215074452",
+        "category": "Elektronik",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "FISH SAUCE 300ML",
+        "sku": "21723339994",
+        "barcode": "21723339994",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "LAK CIANG 8'S",
+        "sku": "2196170017981",
+        "barcode": "2196170017981",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "WRIGLEYS ORBIT PEPPERMINT GUM 14G",
+        "sku": "22000001955",
+        "barcode": "22000001955",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "WRIGLEYS COOL AIR HONEY&LEMON 42.5G",
+        "sku": "22000002594",
+        "barcode": "22000002594",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "WRIGLEYS DOUBLEMENT GUM 42G",
+        "sku": "22000004093",
+        "barcode": "22000004093",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "WRIGLEY'S COOL AIR 10'S MENTHOL",
+        "sku": "22000008510",
+        "barcode": "22000008510",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "WRIGLEYS JUICY FRUIT STRAPPLEBERRY 17G",
+        "sku": "22000062024",
+        "barcode": "22000062024",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "WRIGLEYS DOUBLEMINT GUM 102G",
+        "sku": "22000101754",
+        "barcode": "22000101754",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DOUBLEMINT CHEW GUM JUMBO 160G",
+        "sku": "22000111364",
+        "barcode": "22000111364",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "JUICY FRUIT CHEW GUM JUMBO 160G",
+        "sku": "22000111371",
+        "barcode": "22000111371",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "COOL AIR CHEW GUM MENTHOL&EUCA 85G",
+        "sku": "22000111425",
+        "barcode": "22000111425",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "COOL AIR CHEW GUM HONEY-LEMON 85G",
+        "sku": "22000111432",
+        "barcode": "22000111432",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "DOUBLEMINT PERMRN STIK 20S",
+        "sku": "22000114723",
+        "barcode": "22000114723",
+        "category": "Umum",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 30,
+        "min_stock": 8
+      },
+      {
+        "name": "WRIGLEY JUICY FRUIT STICK",
+        "sku": "22000114730",
+        "barcode": "22000114730",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "EAR PHONE AX",
+        "sku": "221100236",
+        "barcode": "221100236",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SONY EARPHONE 727",
+        "sku": "22110025",
+        "barcode": "22110025",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SAPU KIPAS DUK-ANTOK DUK TYA",
+        "sku": "222010137",
+        "barcode": "222010137",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SAPU ANTOK RAYUNG TYA",
+        "sku": "222010139",
+        "barcode": "222010139",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "hanger jilbab-tya",
+        "sku": "222010145",
+        "barcode": "222010145",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "SULAK RAFIA KCL-lgg",
+        "sku": "222010227",
+        "barcode": "222010227",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "PANGGANG SATE KECIL TYA",
+        "sku": "222010283",
+        "barcode": "222010283",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CB.CLANDY 50 DEWASA",
+        "sku": "2222121001355",
+        "barcode": "2222121001355",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "COTTON BUD CLANDY 80 PCS",
+        "sku": "2222121001362",
+        "barcode": "2222121001362",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "CB. CLANDY 50 BAYI",
+        "sku": "2222121001393",
+        "barcode": "2222121001393",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "COTTON BUD CLANDY 100 PCS",
+        "sku": "2222121001409",
+        "barcode": "2222121001409",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "NAKAMI GARPU MAKAN 6`S",
+        "sku": "22289308",
+        "barcode": "22289308",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "NAKAMI SENDOK MAKAN 6`S",
+        "sku": "22289698",
+        "barcode": "22289698",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "REGINA TUTUP GELAS SET",
+        "sku": "223010004",
+        "barcode": "223010004",
+        "category": "Umum",
+        "priceRetail": 50000,
+        "priceWholesale": 42000,
+        "stock": 8,
+        "min_stock": 2
+      },
+      {
+        "name": "SENDOK GARPU PLASTIK 6s",
+        "sku": "223010181",
+        "barcode": "223010181",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "saos raja rasa",
+        "sku": "2240432051500",
+        "barcode": "2240432051500",
+        "category": "Makanan",
+        "priceRetail": 5000,
+        "priceWholesale": 4000,
+        "stock": 40,
+        "min_stock": 10
+      },
+      {
+        "name": "TOMMY HILFINGER PARFUM",
+        "sku": "22548074725",
+        "barcode": "22548074725",
+        "category": "Kosmetik",
+        "priceRetail": 75000,
+        "priceWholesale": 65000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "DKNY PARFUME",
+        "sku": "22548133514",
+        "barcode": "22548133514",
+        "category": "Kosmetik",
+        "priceRetail": 75000,
+        "priceWholesale": 65000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "TOMMY GIRL PARFUM",
+        "sku": "22548139639",
+        "barcode": "22548139639",
+        "category": "Kosmetik",
+        "priceRetail": 75000,
+        "priceWholesale": 65000,
+        "stock": 10,
+        "min_stock": 3
+      },
+      {
+        "name": "CANDY BAG",
+        "sku": "2257171535369",
+        "barcode": "2257171535369",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      },
+      {
+        "name": "WATER COLOR SH TOY`S",
+        "sku": "2303100630001",
+        "barcode": "2303100630001",
+        "category": "Umum",
+        "priceRetail": 25000,
+        "priceWholesale": 20000,
+        "stock": 15,
+        "min_stock": 4
+      }
+    ]
+  }
+}

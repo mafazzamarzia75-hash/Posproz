@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Contoh Produk 1",
+    "sku": "SKU001",
+    "barcode": "8991234567890",
+    "category": "Makanan",
+    "priceRetail": 5000,
+    "priceWholesale": 4500,
+    "stock": 100,
+    "min_stock": 10
+  },
+  {
+    "name": "Contoh Produk 2",
+    "sku": "SKU002",
+    "barcode": "8990987654321",
+    "category": "Minuman",
+    "priceRetail": 10000,
+    "priceWholesale": 9000,
+    "stock": 50,
+    "min_stock": 5
+  },
+  {
+    "name": "Contoh Produk 3",
+    "sku": "SKU003",
+    "barcode": "8991111222233",
+    "category": "Umum",
+    "priceRetail": 15000,
+    "priceWholesale": 13500,
+    "stock": 200,
+    "min_stock": 20
+  }
+]

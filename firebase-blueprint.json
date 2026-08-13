@@ -1,0 +1,250 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile who can access the system",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique user ID" },
+        "username": { "type": "string", "description": "Lowercase trimmer username" },
+        "password": { "type": "string", "description": "Hashing/plain text password representation" },
+        "name": { "type": "string", "description": "Human full name" },
+        "role": { "type": "string", "enum": ["admin", "kasir", "gudang"], "description": "System privilege role" },
+        "isActive": { "type": "boolean", "description": "Active status of user" },
+        "created_at": { "type": "number", "description": "Unix timestamp in ms" },
+        "updated_at": { "type": "number", "description": "Unix timestamp in ms" }
+      },
+      "required": ["id", "username", "password", "name", "role", "isActive"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "System products and tradeable items",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique product SKU-related ID" },
+        "name": { "type": "string", "description": "Name of product" },
+        "sku": { "type": "string", "description": "Unique barcoded SKU reference" },
+        "barcode": { "type": "string", "description": "Optional barcode scanning code" },
+        "category": { "type": "string", "description": "Main category classification" },
+        "priceRetail": { "type": "number", "description": "Standard selling price" },
+        "priceWholesale": { "type": "number", "description": "Wholesale discount price" },
+        "priceCost": { "type": "number", "description": "Cost of goods purchased" },
+        "stock": { "type": "number", "description": "Remaining units count" },
+        "min_stock": { "type": "number", "description": "Alert limit threshold for stock" },
+        "supplierId": { "type": "string", "description": "Supplier relation link" },
+        "supplierName": { "type": "string", "description": "Supplier denormalized display name" },
+        "created_at": { "type": "number", "description": "Unix timestamp in ms" },
+        "updated_at": { "type": "number", "description": "Unix timestamp in ms" }
+      },
+      "required": ["id", "name", "sku", "category", "priceRetail", "stock"]
+    },
+    "Sale": {
+      "title": "Sale",
+      "description": "Pos checkout transactions entry",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Custom TX sequence key" },
+        "total": { "type": "number", "description": "Grand total price amount" },
+        "items": { "type": "array", "description": "Raw items checkout array of items metadata" },
+        "created_at": { "type": "string", "description": "ISO timestamp string" }
+      },
+      "required": ["id", "total", "items", "created_at"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Standardized category listing",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Raw category identifier name" }
+      },
+      "required": ["name"]
+    },
+    "Expense": {
+      "title": "Expense",
+      "description": "System operational costing logs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Expense logged event ID" },
+        "name": { "type": "string", "description": "Short explanation title" },
+        "amount": { "type": "number", "description": "Cost in rupiah" },
+        "category": { "type": "string", "description": "Classification group tags" },
+        "date": { "type": "number", "description": "Unix milliseconds input date selection" },
+        "notes": { "type": "string", "description": "Detailed remarks on operational items" },
+        "created_at": { "type": "number", "description": "Unix milliseconds log date" },
+        "updated_at": { "type": "number", "description": "Unix milliseconds log date" }
+      },
+      "required": ["id", "name", "amount", "category", "date"]
+    },
+    "Customer": {
+      "title": "Customer",
+      "description": "Retail customer CRM tracker info",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifier ID" },
+        "name": { "type": "string", "description": "Full display name" },
+        "phone": { "type": "string", "description": "Contact cellular lines" },
+        "address": { "type": "string", "description": "Mailing context lines" },
+        "totalSpent": { "type": "number", "description": "Accumulative revenues from customer" },
+        "totalTransactions": { "type": "number", "description": "Accumulative invoice counts" },
+        "notes": { "type": "string", "description": "Context notes" },
+        "created_at": { "type": "number", "description": "Unix millisecond date tracker" },
+        "updated_at": { "type": "number", "description": "Unix millisecond date tracker" }
+      },
+      "required": ["id", "name"]
+    },
+    "Supplier": {
+      "title": "Supplier",
+      "description": "Supply chains master suppliers contact representation",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Supplier ID" },
+        "name": { "type": "string", "description": "Agency name or shop description" },
+        "phone": { "type": "string", "description": "Mobile lines" },
+        "address": { "type": "string", "description": "Physical building location" },
+        "contactPerson": { "type": "string", "description": "Spokesperson name representation" },
+        "npwp": { "type": "string", "description": "Official tax number registration string" },
+        "notes": { "type": "string", "description": "Trade terms and other details" },
+        "productCount": { "type": "number", "description": "Count of associated commodities" },
+        "totalPurchases": { "type": "number", "description": "Purchases cost volume logged" },
+        "created_at": { "type": "number", "description": "Logged date" },
+        "updated_at": { "type": "number", "description": "Logged date" }
+      },
+      "required": ["id", "name"]
+    },
+    "Debt": {
+      "title": "Debt",
+      "description": "Debt ledger representation",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Ledger ticket unique reference" },
+        "type": { "type": "string", "enum": ["receivable", "payable"], "description": "Receivable/payable enum" },
+        "customerId": { "type": "string", "description": "Linked customer ID link" },
+        "customerName": { "type": "string", "description": "Display name of customer" },
+        "supplierId": { "type": "string", "description": "Linked supplier ID link" },
+        "supplierName": { "type": "string", "description": "Display name of supplier" },
+        "amount": { "type": "number", "description": "Valuation of debt" },
+        "paidAmount": { "type": "number", "description": "Amount paid back" },
+        "description": { "type": "string", "description": "Purpose details writeup" },
+        "dueDate": { "type": "number", "description": "Unix ms due timestamp" },
+        "status": { "type": "string", "enum": ["unpaid", "partial", "paid"], "description": "Payment tier state" },
+        "created_at": { "type": "number", "description": "Issued time" },
+        "updated_at": { "type": "number", "description": "Issued time" }
+      },
+      "required": ["id", "type", "amount", "paidAmount", "status"]
+    },
+    "Discount": {
+      "title": "Discount",
+      "description": "POS campaign/promotion program coupon",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Identifier key" },
+        "code": { "type": "string", "description": "Promocode search sequence key uppercase" },
+        "name": { "type": "string", "description": "Description title" },
+        "type": { "type": "string", "enum": ["percentage", "nominal"], "description": "Evaluation style percentage/fixed nominal" },
+        "value": { "type": "number", "description": "Percent count or rupiah count to discount" },
+        "minPurchase": { "type": "number", "description": "Minimum limit checklist in POS cart" },
+        "maxDiscount": { "type": "number", "description": "Cap of nominal cuts allowed" },
+        "isActive": { "type": "boolean", "description": "Campaign status toggling" },
+        "usageLimit": { "type": "number", "description": "Maximum uses pool allowed" },
+        "usageCount": { "type": "number", "description": "Current registered usages" },
+        "validFrom": { "type": "number", "description": "Start epoch date ms" },
+        "validUntil": { "type": "number", "description": "Stop epoch date ms" },
+        "created_at": { "type": "number", "description": "Written date" },
+        "updated_at": { "type": "number", "description": "Written date" }
+      },
+      "required": ["id", "code", "type", "value", "isActive"]
+    },
+    "Restock": {
+      "title": "Restock",
+      "description": "Commodity restock procurement invoice receipts tracking",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique key ID" },
+        "productId": { "type": "string", "description": "Linked product ID" },
+        "productName": { "type": "string", "description": "Commodity title" },
+        "productSku": { "type": "string", "description": "SKU code" },
+        "qty": { "type": "number", "description": "Buying quantities volume size" },
+        "priceBuy": { "type": "number", "description": "Purchase cost unit tier" },
+        "totalCost": { "type": "number", "description": "Net costs computed" },
+        "stockBefore": { "type": "number", "description": "Product stock before update" },
+        "stockAfter": { "type": "number", "description": "Product stock after update" },
+        "supplierId": { "type": "string", "description": "Linked supplier identification" },
+        "supplierName": { "type": "string", "description": "Supplier title metadata" },
+        "invoiceNumber": { "type": "string", "description": "Paper log record metadata reference" },
+        "notes": { "type": "string", "description": "Context logs text" },
+        "created_at": { "type": "number", "description": "Logged epoch ms datetime" }
+      },
+      "required": ["id", "productId", "qty", "stockBefore", "stockAfter"]
+    },
+    "Retur": {
+      "title": "Retur",
+      "description": "Defect products return transactions process log ticketing",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Log ticket track identity" },
+        "type": { "type": "string", "enum": ["sale_return", "purchase_return"], "description": "Transaction directions classification" },
+        "productId": { "type": "string", "description": "Commodity context links" },
+        "productName": { "type": "string", "description": "Product text display cache" },
+        "productSku": { "type": "string", "description": "Commodity SKU code" },
+        "qty": { "type": "number", "description": "Quantities volume count" },
+        "price": { "type": "number", "description": "Price level of product return" },
+        "totalRefund": { "type": "number", "description": "Total returns costs values" },
+        "reason": { "type": "string", "description": "Reason details" },
+        "customerName": { "type": "string", "description": "Customer tag" },
+        "transactionId": { "type": "string", "description": "Checkout sale source link ID" },
+        "supplierId": { "type": "string", "description": "Vendor tag" },
+        "supplierName": { "type": "string", "description": "Vendor agency representation" },
+        "invoiceNumber": { "type": "string", "description": "Order invoices tracking references" },
+        "notes": { "type": "string", "description": "Textual information context" },
+        "created_at": { "type": "number", "description": "Logged epoch ms timestamp" }
+      },
+      "required": ["id", "type", "productId", "qty", "totalRefund"]
+    }
+  },
+  "firestore": {
+    "users": {
+      "schema": "User",
+      "description": "Users information records"
+    },
+    "products": {
+      "schema": "Product",
+      "description": "Retail commodities catalog data"
+    },
+    "sales": {
+      "schema": "Sale",
+      "description": "POS checkout records"
+    },
+    "categories": {
+      "schema": "Category",
+      "description": "Standard inventory collections category"
+    },
+    "expenses": {
+      "schema": "Expense",
+      "description": "POS store operation costs ledger logs"
+    },
+    "customers": {
+      "schema": "Customer",
+      "description": "CRM customer tracking base record"
+    },
+    "suppliers": {
+      "schema": "Supplier",
+      "description": "Vendor master database record representation"
+    },
+    "debts": {
+      "schema": "Debt",
+      "description": "Ledger cards of receivable/payable debts trackers"
+    },
+    "discounts": {
+      "schema": "Discount",
+      "description": "Sales promotional voucher coupon details"
+    },
+    "restocks": {
+      "schema": "Restock",
+      "description": "Replenishment items transaction inventory entries"
+    },
+    "returs": {
+      "schema": "Retur",
+      "description": "Items returned data trackers for POS retail transactions"
+    }
+  }
+}
