@@ -4,7 +4,7 @@
  */
 
 import React, { useEffect, useState, useRef } from 'react';
-import { Download, Upload, Shield, Database, Store, Save, Printer, Globe, FileInput, Trash2, FileDown, FileUp, RefreshCw, CheckCircle2, AlertCircle, Moon } from 'lucide-react';
+import { Download, Upload, Shield, Database, Store, Save, Printer, Globe, FileInput, Trash2, FileDown, FileUp, RefreshCw, CheckCircle2, AlertCircle, Moon, HandCoins } from 'lucide-react';
 import { dbProvider } from '@/services/db/DatabaseService';
 import { printerService } from '@/services/hardware/PrinterService';
 import { useSettingsStore } from '@/store/useSettingsStore';
@@ -1148,6 +1148,36 @@ const SettingsPage: React.FC = () => {
             )}
             Cetak Struk Percobaan
           </button>
+        </div>
+
+        {/* Support Saya dengan Donasi */}
+        <div className="bg-white p-8 rounded-[32px] border border-slate-100 shadow-sm space-y-6">
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-600 shadow-inner">
+              <HandCoins size={28} />
+            </div>
+            <div>
+              <h3 className="font-black text-xl text-slate-800 tracking-tight">Support Saya dengan Donasi</h3>
+              <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Bantu pengembangan aplikasi</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center text-center gap-4">
+            <div className="p-4 bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-[28px] shadow-sm">
+              <img
+                src="/qris-donasi.svg"
+                alt="QRIS donasi"
+                className="w-56 h-56 object-cover rounded-2xl border border-amber-200 bg-white shadow-inner"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-600">Scan QRIS</p>
+              <p className="text-sm text-slate-600 font-medium leading-relaxed">
+                Dukungan Anda sangat membantu untuk menjaga fitur, update, dan support aplikasi ini.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Pencadangan Data */}
