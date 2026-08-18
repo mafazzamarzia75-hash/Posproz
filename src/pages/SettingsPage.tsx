@@ -1163,11 +1163,11 @@ const SettingsPage: React.FC = () => {
           </div>
 
           <div className="flex flex-col items-center text-center gap-4">
-            <div className="p-4 bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-[28px] shadow-sm">
+            <div className="w-[240px] h-[240px] p-4 bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-200 rounded-[28px] shadow-sm flex items-center justify-center overflow-hidden">
               <img
                 src="/Qrisposproz.jpg"
                 alt="QRIS Posproz"
-                className="w-56 h-56 object-cover rounded-2xl border border-amber-200 bg-white shadow-inner"
+                className="w-full h-full object-contain rounded-2xl border border-amber-200 bg-white shadow-inner"
               />
             </div>
 
