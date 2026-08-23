@@ -14,7 +14,7 @@
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, ShoppingCart, Package, History, Wallet, BarChart3, Store, Bot, Truck, Users, TrendingDown, Percent, LogOut, User as UserIcon, PackagePlus, RotateCcw, ChevronDown, ChevronUp, GripHorizontal, ArrowDown, ArrowUp, ArrowLeft, ArrowRight, X } from 'lucide-react';
+import { LayoutDashboard, ShoppingCart, Package, History, Wallet, BarChart3, Store, Truck, Users, TrendingDown, Percent, LogOut, PackagePlus, RotateCcw, Menu, X, GripHorizontal, ArrowDown, ArrowUp, ArrowLeft, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import StockAlert from '@/components/pos/StockAlert';
 import { cn } from '@/lib/utils';
 import { useSettingsStore, NavbarPosition } from '@/store/useSettingsStore';
@@ -25,7 +25,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const navigate = useNavigate();
   const storeName = useSettingsStore(state => state.storeInfo.name);
   const currentUser = indexdbUser.getCurrentUser();
-  const [navCollapsed, setNavCollapsed] = useState(false);
+  const [navCollapsed, setNavCollapsed] = useState(true);
 
   // 🔴 State navbar draggable dari store
   const navbar = useSettingsStore(state => state.navbar);
@@ -202,7 +202,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
       {/* Main Scrollable Content Panel — padding menyesuaikan posisi navbar */}
       <main className={`flex-1 overflow-y-auto px-4 py-4 md:px-6 md:py-6 transition-all duration-300 ${
-        navCollapsed ? 'pb-20' : 'pb-28'
+        'pb-24'
       }`} style={{ backgroundColor: 'var(--color-bg-primary)' }}>
         <div className="max-w-7xl mx-auto">
           <StockAlert />
@@ -222,10 +222,10 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         >
           <nav 
             className={cn(
-              "backdrop-blur-md rounded-[28px] flex items-center gap-2 overflow-x-auto shadow-xl select-none",
+              "nav-panel backdrop-blur-md rounded-xl grid gap-2 overflow-y-auto shadow-xl select-none p-3",
               isVertical 
-                ? "flex-col h-auto w-[76px] py-3 px-1 overflow-y-auto max-h-[calc(var(--vh,1vh)*100-32px)] custom-scrollbar-thin"
-                : "h-20 px-4 scrollbar-none",
+                ? "grid-cols-3 w-[246px] max-h-[calc(var(--vh,1vh)*100-112px)] custom-scrollbar-thin"
+                : "grid-cols-4 sm:grid-cols-5 w-[min(calc(100vw-24px),400px)] max-h-[calc(var(--vh,1vh)*100-112px)]",
               isCustom && "border-2 border-dashed border-indigo-300"
             )}
             style={{ 
@@ -239,7 +239,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <button
               onMouseDown={handleDragStart}
               onTouchStart={handleDragStart}
-              className="flex items-center justify-center w-8 h-8 rounded-xl bg-indigo-100 text-indigo-600 cursor-grab active:cursor-grabbing shrink-0 hover:bg-indigo-200 transition-all"
+              className="interactive-hover flex h-[68px] w-full flex-col items-center justify-center gap-1 rounded-lg bg-indigo-100 text-indigo-600 cursor-grab active:cursor-grabbing transition-all"
               title="Geser untuk memindahkan navbar"
             >
               <GripHorizontal size={16} />
@@ -248,7 +248,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {/* Tombol sembunyikan */}
             <button
               onClick={(e) => { e.preventDefault(); setNavCollapsed(true); }}
-              className="flex flex-col items-center justify-center gap-1 py-1 px-1.5 rounded-2xl min-w-[44px] shrink-0 hover:opacity-75 transition-all active:scale-95"
+              className="interactive-hover flex h-[68px] w-full flex-col items-center justify-center gap-1 rounded-lg bg-slate-100/70 transition-all active:scale-95"
               title="Sembunyikan navigasi"
             >
               <div className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-100/50 border border-slate-200/50 text-slate-400 hover:text-slate-600 transition-all">
@@ -260,7 +260,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             {/* 🔴 Tombol pindah posisi */}
             <button
               onClick={(e) => { e.stopPropagation(); setShowPositionMenu(!showPositionMenu); }}
-              className="flex flex-col items-center justify-center gap-1 py-1 px-1.5 rounded-2xl min-w-[44px] shrink-0 hover:opacity-75 transition-all active:scale-95"
+              className="interactive-hover flex h-[68px] w-full flex-col items-center justify-center gap-1 rounded-lg bg-slate-100/70 transition-all active:scale-95"
               title="Pindahkan posisi navbar"
             >
               <div className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-100/50 border border-slate-200/50 text-slate-400 hover:text-slate-600 transition-all">
@@ -277,7 +277,7 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                   key={item.path}
                   to={item.path}
                   className={cn(
-                    "flex flex-col items-center justify-center gap-1 transition-all py-1 px-2.5 rounded-2xl min-w-[64px] shrink-0",
+                    "interactive-hover flex h-[68px] w-full flex-col items-center justify-center gap-1 rounded-lg px-1 transition-all active:scale-95",
                     isActive 
                       ? "scale-105" 
                       : "hover:opacity-75 active:scale-95"
@@ -379,11 +379,12 @@ const MainLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       {navCollapsed && (
         <button
           onClick={() => setNavCollapsed(false)}
-          className="fixed bottom-1 left-1/2 -translate-x-1/2 z-[100] flex items-center justify-center gap-1.5 px-3 py-1.5 bg-indigo-600/90 text-white rounded-lg shadow-md hover:bg-indigo-700 transition-all active:scale-95 animate-in slide-in-from-bottom-4 fade-in duration-200 backdrop-blur-sm"
+          style={getNavbarStyle()}
+          className="interactive-hover z-[100] flex h-14 min-w-14 items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 text-white shadow-lg transition-all active:scale-95 animate-in fade-in duration-200 backdrop-blur-sm"
           title="Buka navigasi"
         >
-          <ChevronUp size={12} strokeWidth={3} />
-          <span className="text-[9px] font-black uppercase tracking-widest">Menu</span>
+          <Menu size={20} strokeWidth={2.5} />
+          <span className="text-xs font-black uppercase tracking-wider">Menu</span>
         </button>
       )}
     </div>

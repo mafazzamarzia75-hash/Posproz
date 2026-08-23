@@ -287,6 +287,16 @@
 }
 
 @layer components {
+  .interactive-hover {
+    transition: box-shadow 180ms ease, transform 180ms ease, background-color 180ms ease;
+  }
+
+  .interactive-hover:hover,
+  .card:hover,
+  button:hover {
+    box-shadow: 0 8px 18px -8px rgba(15, 23, 42, 0.38);
+  }
+
   /* ========================================
      CARD & SURFACE STYLES
      ======================================== */
