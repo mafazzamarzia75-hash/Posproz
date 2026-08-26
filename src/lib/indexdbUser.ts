@@ -244,8 +244,9 @@ class IndexDBUser {
       }
     }
 
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).users.delete(id);
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).users.delete(id);
+    }
   }
 
   async login(username: string, password: string): Promise<{ success: boolean; user?: any; error?: string }> {

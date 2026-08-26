@@ -240,9 +240,9 @@ class SyncService {
     delete dataToUpsert.sync_status; // Jangan kirim sync_status ke server
 
     // Map camelCase local fields -> snake_case Supabase columns
-    if (table === 'products') {
-      dataToUpsert = this.mapProductToPostgres(dataToUpsert);
-    }
+    dataToUpsert = table === 'products'
+      ? this.mapProductToPostgres(dataToUpsert)
+      : this.mapEntityToPostgres(table, dataToUpsert);
 
     // Tambahkan server metadata
     dataToUpsert.updated_at = new Date(dataToUpsert.updated_at).toISOString();
@@ -287,6 +287,41 @@ class SyncService {
     if (product.description) data.description = product.description;
     if (product.image_url) data.image_url = product.image_url;
     if (product.created_at) data.created_at = new Date(product.created_at).toISOString();
+    return data;
+  }
+
+  private mapProductFromPostgres(product: any): any {
+    return {
+      ...product,
+      priceRetail: Number(product.price_retail ?? product.priceRetail ?? 0),
+      priceWholesale: Number(product.price_wholesale ?? product.priceWholesale ?? 0),
+      priceCost: Number(product.price_cost ?? product.priceCost ?? 0),
+      supplierId: product.supplier_id ?? product.supplierId ?? '',
+      supplierName: product.supplier_name ?? product.supplierName ?? '',
+      min_stock: Number(product.min_stock ?? 0),
+    };
+  }
+
+  private mapEntityToPostgres(table: TableName, item: any): any {
+    const data = { ...item };
+    const fieldMaps: Partial<Record<TableName, Record<string, string>>> = {
+      customers: { totalSpent: 'total_spent', totalTransactions: 'total_transactions', lastTransaction: 'last_transaction' },
+      suppliers: { contactPerson: 'contact_person', productCount: 'product_count', totalPurchases: 'total_purchases' },
+      transactions: { transactionType: 'transaction_type', transactionDate: 'transaction_date', customerId: 'customer_id', supplierId: 'supplier_id', totalAmount: 'total_amount', paidAmount: 'paid_amount', paymentMethod: 'payment_method', isDraft: 'is_draft', isDeleted: 'is_deleted' },
+      restocks: { productId: 'product_id', productName: 'product_name', productSku: 'product_sku', priceBuy: 'price_buy', totalCost: 'total_cost', stockBefore: 'stock_before', stockAfter: 'stock_after', supplierId: 'supplier_id', supplierName: 'supplier_name', invoiceNumber: 'invoice_number' },
+      returs: { productId: 'product_id', productName: 'product_name', productSku: 'product_sku', totalRefund: 'total_refund', customerName: 'customer_name', transactionId: 'transaction_id', supplierName: 'supplier_name', supplierId: 'supplier_id', invoiceNumber: 'invoice_number' },
+      debts: { customerId: 'customer_id', customerName: 'customer_name', supplierId: 'supplier_id', supplierName: 'supplier_name', paidAmount: 'paid_amount', dueDate: 'due_date' },
+      discounts: { minPurchase: 'min_purchase', maxDiscount: 'max_discount', isActive: 'is_active', usageLimit: 'usage_limit', usageCount: 'usage_count', validFrom: 'valid_from', validUntil: 'valid_until' },
+      users: { isActive: 'is_active' },
+      sales: { customerName: 'customer_name', paymentMethod: 'payment_method', paidAmount: 'paid_amount', discountAmount: 'discount_amount' },
+    };
+
+    for (const [localKey, serverKey] of Object.entries(fieldMaps[table] || {})) {
+      if (data[localKey] !== undefined && data[serverKey] === undefined) {
+        data[serverKey] = data[localKey];
+      }
+      delete data[localKey];
+    }
     return data;
   }
 
@@ -357,7 +392,7 @@ class SyncService {
           continue;
         }
 
-        const localData = { ...item };
+        const localData = table === 'products' ? this.mapProductFromPostgres(item) : { ...item };
         // Convert timestamps
         if (localData.updated_at) {
           localData.updated_at = new Date(localData.updated_at).getTime();

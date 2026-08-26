@@ -232,8 +232,10 @@ class IndexDBBarang {
         console.error("PG Delete Product Error:", e);
       }
     }
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).products.delete(String(id));
+    // Pertahankan tombstone lokal sampai SyncService selesai menghapus di cloud.
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).products.delete(String(id));
+    }
   }
 
   async count(): Promise<number> {

@@ -152,8 +152,9 @@ class IndexDBDiscount {
       }
     }
 
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).discounts.delete(id);
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).discounts.delete(id);
+    }
   }
 
   /** Validasi kode diskon: cek apakah aktif, masih berlaku, belum melebihi limit */

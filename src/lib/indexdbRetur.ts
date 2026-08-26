@@ -173,8 +173,9 @@ class IndexDBRetur {
       }
     }
 
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).returs.delete(id);
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).returs.delete(id);
+    }
   }
 
   async clearAll(): Promise<void> {

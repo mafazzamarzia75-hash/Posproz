@@ -194,8 +194,9 @@ class IndexDBExpense {
         console.error("PG Delete Expense Error:", err);
       }
     }
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).expenses.delete(id);
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).expenses.delete(id);
+    }
   }
 
   async getTotalByCategory(): Promise<Record<string, number>> {

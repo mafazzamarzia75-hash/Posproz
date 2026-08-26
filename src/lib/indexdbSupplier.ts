@@ -219,8 +219,9 @@ class IndexDBSupplier {
       }
     }
 
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).suppliers.delete(id);
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).suppliers.delete(id);
+    }
   }
 
   async search(query: string): Promise<Supplier[]> {

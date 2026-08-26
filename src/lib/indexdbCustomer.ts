@@ -253,8 +253,9 @@ class IndexDBCustomer {
       }
     }
 
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).customers.delete(id);
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).customers.delete(id);
+    }
   }
 
   /**

@@ -139,8 +139,9 @@ class IndexDBCategory {
       }
     }
 
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).categories.delete(name);
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).categories.delete(name);
+    }
     return true;
   }
 

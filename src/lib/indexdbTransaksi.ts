@@ -223,8 +223,9 @@ class IndexDBTransaksi {
         console.error("PG Delete Transaction Error:", e);
       }
     }
-    // ✅ Satu jalur: hapus dari Dexie
-    await (offlineDB as any).sales.delete(id);
+    if (!isPostgresConfigured) {
+      await (offlineDB as any).sales.delete(id);
+    }
   }
 
   async clearAll(): Promise<void> {
