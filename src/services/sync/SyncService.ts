@@ -343,8 +343,7 @@ class SyncService {
     try {
       const { data, error } = await supabase
         .from(table)
-        .select('*')
-        .eq('sync_status', 'synced'); // Hanya pull synced data dari server
+        .select('*');
 
       if (error) throw error;
 
