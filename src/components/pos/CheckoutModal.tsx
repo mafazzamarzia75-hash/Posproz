@@ -40,6 +40,8 @@ const CheckoutModal: React.FC<Props> = ({ onClose, onConfirm, onManualPriceSave 
   const [activeDiscount, setActiveDiscount] = useState<ActiveDiscount | null>(null);
   const [discountError, setDiscountError] = useState('');
   const [discountLoading, setDiscountLoading] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const submittingRef = useRef(false);
 
   const accent = isWholesaleMode ? 'orange' : 'emerald';
   const accentHex = isWholesaleMode ? '#F97316' : '#10B981';
@@ -113,90 +115,99 @@ const CheckoutModal: React.FC<Props> = ({ onClose, onConfirm, onManualPriceSave 
 
   // ✅ Auto-simpan atau update customer & increment usage diskon saat transaksi selesai
   const handleFinish = async () => {
-    const name = customerName.trim();
-    let finalCustomerId = '';
+    if (submittingRef.current) return;
+    submittingRef.current = true;
+    setIsSubmitting(true);
 
-    // ✅ 1. Simpan/update customer jika ada nama
-    if (name) {
-      try {
-        const all = await indexdbCustomer.getAll();
-        const existing = all.find(c => 
-          c.name.toLowerCase() === name.toLowerCase() || 
-          (customerPhone && c.phone === customerPhone)
-        );
+    try {
+      const name = customerName.trim();
+      let finalCustomerId = '';
 
-        if (existing) {
-          await indexdbCustomer.updateStats(existing.id, getTotal());
-          finalCustomerId = existing.id;
-        } else {
-          const now = Date.now();
-          const newId = `cust_${customerPhone || generateUUID().slice(0, 8)}`;
-          const newCustomer: Customer = {
-            id: newId,
-            name: name,
-            phone: customerPhone || '',
-            address: '',
-            notes: '',
-            totalSpent: getTotal(),
-            totalTransactions: 1,
-            lastTransaction: now,
-            created_at: now,
-            updated_at: now,
-          };
-          await indexdbCustomer.save(newCustomer);
-          finalCustomerId = newId;
-        }
-      } catch (e) {
-        console.error('Save customer from checkout error:', e);
-      }
-    }
-
-    // ✅ 2. Jika Metode Pembayaran adalah "Piutang", catat di Debt Service
-    if (paymentMethod === 'debt' && name) {
-      const remainingAmount = total - Number(cashAmount || 0);
-      if (remainingAmount > 0) {
+      // ✅ 1. Simpan/update customer jika ada nama
+      if (name) {
         try {
-          await indexdbDebt.save({
-            id: indexdbDebt.generateId(),
-            type: 'receivable',
-            customerId: finalCustomerId || null,
-            customerName: name,
-            supplierId: null,
-            supplierName: '',
-            amount: total,
-            paidAmount: Number(cashAmount || 0),
-            description: `Belanja POS - sisa tempo Rp ${remainingAmount}`,
-            dueDate: Date.now() + 7 * 24 * 60 * 60 * 1000, // Default 7 hari jatuh tempo
-            status: Number(cashAmount || 0) > 0 ? 'partial' : 'unpaid',
-            created_at: Date.now(),
-            updated_at: Date.now()
-          });
-          console.log("🟢 [Checkout]: Berhasil mencatat piutang baru untuk pelanggan:", name);
-        } catch (err) {
-          console.error("Gagal menyimpan data piutang ke database:", err);
+          const all = await indexdbCustomer.getAll();
+          const existing = all.find(c =>
+            c.name.toLowerCase() === name.toLowerCase() ||
+            (customerPhone && c.phone === customerPhone)
+          );
+
+          if (existing) {
+            await indexdbCustomer.updateStats(existing.id, getTotal());
+            finalCustomerId = existing.id;
+          } else {
+            const now = Date.now();
+            const newId = `cust_${customerPhone || generateUUID().slice(0, 8)}`;
+            const newCustomer: Customer = {
+              id: newId,
+              name: name,
+              phone: customerPhone || '',
+              address: '',
+              notes: '',
+              totalSpent: getTotal(),
+              totalTransactions: 1,
+              lastTransaction: now,
+              created_at: now,
+              updated_at: now,
+            };
+            await indexdbCustomer.save(newCustomer);
+            finalCustomerId = newId;
+          }
+        } catch (e) {
+          console.error('Save customer from checkout error:', e);
         }
       }
-    }
 
-    // ✅ 3. Teruskan Konfirmasi Transaksi POS ke Parent Page dengan subtotal & discountAmount
-    onConfirm(
-      customerName, 
-      paymentMethod, 
-      paymentMethod === 'debt' ? Number(cashAmount || 0) : total,
-      rawTotal,
-      discountAmount
-    );
-    
-    // ✅ 4. Increment pemakaian kode diskon
-    if (activeDiscount) {
-      try {
-        await indexdbDiscount.incrementUsage(activeDiscount.discountId);
-      } catch (e) {
-        console.error('Increment discount usage error:', e);
+      // ✅ 2. Jika Metode Pembayaran adalah "Piutang", catat di Debt Service
+      if (paymentMethod === 'debt' && name) {
+        const remainingAmount = total - Number(cashAmount || 0);
+        if (remainingAmount > 0) {
+          try {
+            await indexdbDebt.save({
+              id: indexdbDebt.generateId(),
+              type: 'receivable',
+              customerId: finalCustomerId || null,
+              customerName: name,
+              supplierId: null,
+              supplierName: '',
+              amount: total,
+              paidAmount: Number(cashAmount || 0),
+              description: `Belanja POS - sisa tempo Rp ${remainingAmount}`,
+              dueDate: Date.now() + 7 * 24 * 60 * 60 * 1000, // Default 7 hari jatuh tempo
+              status: Number(cashAmount || 0) > 0 ? 'partial' : 'unpaid',
+              created_at: Date.now(),
+              updated_at: Date.now()
+            });
+            console.log("🟢 [Checkout]: Berhasil mencatat piutang baru untuk pelanggan:", name);
+          } catch (err) {
+            console.error("Gagal menyimpan data piutang ke database:", err);
+          }
+        }
       }
-    }
 
-    setStep('success');
+      // ✅ 3. Teruskan Konfirmasi Transaksi POS ke Parent Page dengan subtotal & discountAmount
+      await onConfirm(
+        customerName,
+        paymentMethod,
+        paymentMethod === 'debt' ? Number(cashAmount || 0) : total,
+        rawTotal,
+        discountAmount
+      );
+
+      // ✅ 4. Increment pemakaian kode diskon
+      if (activeDiscount) {
+        try {
+          await indexdbDiscount.incrementUsage(activeDiscount.discountId);
+        } catch (e) {
+          console.error('Increment discount usage error:', e);
+        }
+      }
+
+      setStep('success');
+    } finally {
+      submittingRef.current = false;
+      setIsSubmitting(false);
+    }
   };
 
   const handleClose = () => {
@@ -647,7 +658,7 @@ const CheckoutModal: React.FC<Props> = ({ onClose, onConfirm, onManualPriceSave 
                  Kembali
                </button>
                <button 
-                 disabled={paymentMethod === 'cash' && cash < total}
+                 disabled={isSubmitting || (paymentMethod === 'cash' && cash < total)}
                  onClick={handleFinish}
                  className={cn(
                    "flex-[2] py-5 disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed text-white rounded-3xl font-black text-lg shadow-xl transition-all flex items-center justify-center gap-3 active:scale-95 group",
@@ -656,7 +667,9 @@ const CheckoutModal: React.FC<Props> = ({ onClose, onConfirm, onManualPriceSave 
                      : btnPrimary()
                  )}
                >
-                 {paymentMethod === 'debt' ? (
+                 {isSubmitting ? (
+                   <span className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                 ) : paymentMethod === 'debt' ? (
                    <>
                      <Wallet size={24}/> KONFIRMASI PIUTANG
                    </>

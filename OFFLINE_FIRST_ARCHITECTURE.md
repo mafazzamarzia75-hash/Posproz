@@ -68,7 +68,6 @@ Setiap `indexdb*` adalah facade yang **membaca & menulis lewat Dexie**:
 ### 3.1 Menulis data (mis. buat transaksi jual)
 ```
 indexdbTransaksi.create(total, items)
-  ├─ if (isFirebaseConfigured)     → setDoc ke Firestore (legacy)
   ├─ if (isPostgresConfigured)
   │     → enqueueUpsert('sales', data)   // ke Dexie queue
   └─ (offlineDB as any).sales.put(...)   // ke Dexie (satu-satunya storage)
@@ -79,7 +78,6 @@ indexdbTransaksi.create(total, items)
 ### 3.2 Membaca data (mis. tampilkan semua produk)
 ```
 indexdbBarang.getAllBarang()
-  ├─ if (isFirebaseConfigured)     → getDocs Firestore → simpan ke Dexie → return
   ├─ if (isPostgresConfigured)     → supabase.select() → return datanya langsung
   └─ FALLBACK: (offlineDB as any).products.toArray()  // sumber utama offline-first
 ```

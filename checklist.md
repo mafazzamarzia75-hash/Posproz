@@ -79,7 +79,6 @@ Setiap file service sudah tidak memakai IndexedDB legacy lagi — semua baca & t
 ## 10. Lint & Verifikasi
 
 - [x] `npm run lint` bersih — tidak ada error TypeScript baru
-  (hanya error pre-existing: `capacitor.config.ts` @capacitor/cli)
 
 ---
 

@@ -29,7 +29,7 @@ export const useCartStore = create<CartState>()(
           const maxStock = Number(product.stock) || 0;
           if (existing) {
             // 🔴 Batasi qty agar tidak melebihi stok tersedia
-            if (maxStock > 0 && existing.quantity >= maxStock) {
+            if (maxStock <= 0 || existing.quantity >= maxStock) {
               return state;
             }
             return {
@@ -72,7 +72,12 @@ export const useCartStore = create<CartState>()(
           // 🔴 Batasi qty agar tidak melebihi stok tersedia
           const item = state.cart.find((i) => i.id === id);
           const maxStock = Number(item?.stock) || 0;
-          if (maxStock > 0 && newQty > maxStock) {
+          if (maxStock <= 0) {
+            return {
+              cart: state.cart.filter((i) => i.id !== id)
+            };
+          }
+          if (newQty > maxStock) {
             return {
               cart: state.cart.map((i) =>
                 i.id === id ? { ...i, quantity: maxStock } : i

@@ -150,8 +150,7 @@ SYNC  → SyncService kirim ke Supabase tiap 30 detik
 |---|---|---|
 | **Dexie** | ^4.4.3 | IndexedDB wrapper (database lokal offline) |
 | **Supabase** | ^2.108.1 | PostgreSQL cloud + realtime sync |
-| **Firebase** | ^12.14.0 | Firestore (legacy cloud, opsional) |
-| **MongoDB/Mongoose** | ^7.3.0 / ^9.7.0 | Opsional (native) |
+| **Mongoose** | ^9.7.0 | Opsional |
 
 ### Hardware & Utilitas
 | Teknologi | Versi | Kegunaan |
@@ -160,8 +159,6 @@ SYNC  → SyncService kirim ke Supabase tiap 30 detik
 | **JsBarcode** | ^3.12.3 | Generate barcode untuk label |
 | **ExcelJS / XLSX** | ^3.4.0 / ^0.18.5 | Export/import Excel |
 | **UUID** | ^14.0.0 | Generate UUID |
-| **Capacitor** | ^8.4.1 | Build Android native |
-| **Tauri** | ^2.11.2 | Build Windows desktop (opsional) |
 
 ### Scripts
 ```bash
@@ -170,8 +167,6 @@ npm run build        # Build produksi ke dist/
 npm run preview      # Preview hasil build
 npm run lint         # TypeScript type check (tsc --noEmit)
 npm run clean        # Hapus folder dist/
-npm run tauri:dev    # Jalankan sebagai desktop app (Tauri)
-npm run tauri:build  # Build desktop app (Tauri)
 ```
 
 ---
@@ -218,7 +213,6 @@ npm run tauri:build  # Build desktop app (Tauri)
 │   │   ├── syncQueue.ts            # Antrian sinkronisasi
 │   │   ├── migrateLegacy.ts        # Migrasi IndexedDB lama
 │   │   ├── supabaseClient.ts       # Supabase client + gatekeeper
-│   │   ├── firebaseClient.ts       # Firebase client (legacy)
 │   │   ├── indexdbBarang.ts        # Service produk
 │   │   ├── indexdbTransaksi.ts     # Service transaksi
 │   │   ├── indexdbCustomer.ts      # Service pelanggan
@@ -269,11 +263,9 @@ npm run tauri:build  # Build desktop app (Tauri)
 │   ├── products-data.json             # Data produk contoh
 │   └── products-sample.json           # Sample produk
 │
-├── android/                           # Project Android (Capacitor)
 ├── package.json
 ├── vite.config.ts
 ├── tsconfig.json
-├── capacitor.config.ts
 └── vercel.json
 ```
 
@@ -607,19 +599,6 @@ Project sudah memiliki `vercel.json`. Deploy langsung dari GitHub:
 1. Import repository ke Vercel
 2. Build command: `npm run build`
 3. Output directory: `dist`
-
-### Android (Capacitor)
-```bash
-npm run build
-npx cap sync android
-npx cap open android
-```
-
-### Windows Desktop (Tauri)
-```bash
-npm run tauri:dev      # Development
-npm run tauri:build    # Build installer
-```
 
 ### Local Network (LAN)
 Lihat **`LOCAL_LAN_GUIDE.md`** untuk panduan menjalankan di jaringan lokal.

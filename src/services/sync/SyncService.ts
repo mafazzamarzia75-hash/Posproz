@@ -351,21 +351,28 @@ class SyncService {
 
       // Update local data
       for (const item of data) {
+        const localItem = await offlineDB[table].get(item.id);
+        const localSyncStatus = localItem?.sync_status as SyncStatus | undefined;
+        if (localSyncStatus === 'created' || localSyncStatus === 'updated' || localSyncStatus === 'deleted') {
+          continue;
+        }
+
+        const localData = { ...item };
         // Convert timestamps
-        if (item.updated_at) {
-          item.updated_at = new Date(item.updated_at).getTime();
+        if (localData.updated_at) {
+          localData.updated_at = new Date(localData.updated_at).getTime();
         }
-        if (item.created_at) {
-          item.created_at = new Date(item.created_at).getTime();
+        if (localData.created_at) {
+          localData.created_at = new Date(localData.created_at).getTime();
         }
-        if (item.synced_at) {
-          item.synced_at = new Date(item.synced_at).getTime();
+        if (localData.synced_at) {
+          localData.synced_at = new Date(localData.synced_at).getTime();
         }
 
         // Ensure sync_status is synced
-        item.sync_status = 'synced';
+        localData.sync_status = 'synced';
 
-        await offlineDB[table].put(item as any);
+        await offlineDB[table].put(localData as any);
       }
 
       console.log(`✅ Pulled ${data.length} items from ${table}`);

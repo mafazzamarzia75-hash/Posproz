@@ -8,8 +8,7 @@
 import { supabase, isPostgresConfigured } from './supabaseClient';
 import { enqueueUpsert, enqueueDelete } from './syncQueue';
 import { offlineDB } from './dexieDb';
-import { db, isFirebaseConfigured, handleFirestoreError, OperationType } from './firebaseClient';
-import { collection, getDocs, doc, setDoc, deleteDoc } from 'firebase/firestore';
+import { db, isFirebaseConfigured, handleFirestoreError, OperationType, collection, getDocs, doc, setDoc, deleteDoc } from './legacyCloudDisabled';
 
 class IndexDBCategory {
   private dbName: string = "categoryDB";

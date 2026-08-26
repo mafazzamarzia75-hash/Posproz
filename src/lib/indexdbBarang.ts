@@ -11,8 +11,7 @@ import defaultData from "../services/db/DefaultData.json";
 import { supabase, isPostgresConfigured } from './supabaseClient';
 import { enqueueUpsert, enqueueDelete } from './syncQueue';
 import { offlineDB } from './dexieDb';
-import { db, isFirebaseConfigured, handleFirestoreError, OperationType } from './firebaseClient';
-import { collection, getDocs, doc, setDoc, getDoc, deleteDoc } from 'firebase/firestore';
+import { db, isFirebaseConfigured, handleFirestoreError, OperationType, collection, getDocs, doc, setDoc, getDoc, deleteDoc } from './legacyCloudDisabled';
 import { generateUUID } from './uuidGenerator';
 
 class IndexDBBarang {

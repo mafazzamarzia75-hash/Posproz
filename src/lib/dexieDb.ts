@@ -255,7 +255,10 @@ export class OfflineFirstDB extends Dexie {
   async getSyncStats() {
     const counts = await Promise.all(
       OfflineFirstDB.SYNC_TABLES.map((table) =>
-        (this as any)[table].where('sync_status').equals('created').count()
+        (this as any)[table]
+          .where('sync_status')
+          .anyOf(['created', 'updated', 'deleted'])
+          .count()
       )
     );
     const total = counts.reduce((a, b) => a + b, 0);
