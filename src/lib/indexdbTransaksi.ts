@@ -105,6 +105,8 @@ class IndexDBTransaksi {
   }
 
   async getAll(): Promise<any[]> {
+    let remoteSales: any[] | null = null;
+
     if (isFirebaseConfigured) {
       try {
         const querySnapshot = await getDocs(collection(db, 'sales'));
@@ -113,22 +115,20 @@ class IndexDBTransaksi {
         for (const s of cloudSales) {
           await (offlineDB as any).sales.put({ ...s, is_synced: true, sync_status: 'synced', updated_at: Date.now() });
         }
-        return cloudSales.sort((a: any, b: any) => 
-          new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
-        );
+        remoteSales = cloudSales;
       } catch (err) {
         console.error("Firebase GetAll Transactions Error:", err);
       }
     }
 
-    if (isPostgresConfigured) {
+    if (isPostgresConfigured && remoteSales === null) {
       try {
         const { data, error } = await supabase
           .from('sales')
           .select('*')
           .order('created_at', { ascending: false });
         if (!error && data) {
-          return data.map((t: any) => ({
+          remoteSales = data.map((t: any) => ({
             id: t.id,
             total: Number(t.total ?? t.grand_total ?? 0),
             items: typeof t.items === 'string' ? JSON.parse(t.items) : (t.items || []),
@@ -141,9 +141,14 @@ class IndexDBTransaksi {
       }
     }
 
-    // ✅ Satu jalur: baca dari Dexie
+    // Selalu sertakan transaksi lokal agar data pending sync tetap terlihat.
     const all = await (offlineDB as any).sales.toArray();
-    return all.sort((a: any, b: any) =>
+    const merged = new Map<string, any>(all.map((sale: any) => [sale.id, sale]));
+    for (const sale of remoteSales || []) {
+      merged.set(sale.id, sale);
+    }
+
+    return Array.from(merged.values()).sort((a: any, b: any) =>
       new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
     );
   }
