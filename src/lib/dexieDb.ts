@@ -239,17 +239,6 @@ export class OfflineFirstDB extends Dexie {
   }
 
   /**
-   * Hapus data yang sudah disinkronisasi (jika diperlukan)
-   */
-  async clearSyncedData() {
-    await Promise.all(
-      OfflineFirstDB.SYNC_TABLES.map((table) =>
-        (this as any)[table].where('sync_status').equals('synced').delete()
-      )
-    );
-  }
-
-  /**
    * Get sync statistics
    */
   async getSyncStats() {

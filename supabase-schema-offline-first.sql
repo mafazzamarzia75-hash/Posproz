@@ -13,10 +13,22 @@
 -- ============================================================
 
 -- Role pengguna
-CREATE TYPE user_role AS ENUM ('superadmin', 'admin', 'kasir', 'gudang');
-CREATE TYPE transaction_type AS ENUM ('penjualan', 'pembelian', 'retur', 'adjustment');
-CREATE TYPE debt_status AS ENUM ('unpaid', 'partial', 'paid');
-CREATE TYPE debt_type AS ENUM ('receivable', 'payable');
+DO $$ BEGIN
+  CREATE TYPE user_role AS ENUM ('super_admin', 'admin', 'kasir', 'gudang');
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+DO $$ BEGIN
+  CREATE TYPE transaction_type AS ENUM ('penjualan', 'pembelian', 'retur', 'adjustment');
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+DO $$ BEGIN
+  CREATE TYPE debt_status AS ENUM ('unpaid', 'partial', 'paid');
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
+DO $$ BEGIN
+  CREATE TYPE debt_type AS ENUM ('receivable', 'payable');
+EXCEPTION WHEN duplicate_object THEN NULL;
+END $$;
 
 -- ============================================================
 -- 2. TABEL MASTER (multi-tenant)
@@ -92,6 +104,13 @@ CREATE TABLE IF NOT EXISTS sync_logs (
 -- 3. TABEL DATA APLIKASI
 -- ============================================================
 
+CREATE TABLE IF NOT EXISTS categories (
+  id TEXT PRIMARY KEY,
+  name TEXT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW(),
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
 -- ------------------------------------------------------------
 -- Products (Produk)
 -- ------------------------------------------------------------
@@ -154,6 +173,7 @@ CREATE TABLE IF NOT EXISTS transactions (
   customer_id      TEXT,
   supplier_id      TEXT,
   total_amount     NUMERIC DEFAULT 0,
+  items            JSONB DEFAULT '[]',
   paid_amount      NUMERIC DEFAULT 0,
   payment_method   TEXT DEFAULT 'tunai',
   notes            TEXT,
@@ -173,6 +193,7 @@ CREATE TABLE IF NOT EXISTS restocks (
   restock_date   TIMESTAMPTZ DEFAULT NOW(),
   supplier_id    TEXT,
   total_amount   NUMERIC DEFAULT 0,
+  items          JSONB DEFAULT '[]',
   notes          TEXT,
   is_deleted     BOOLEAN DEFAULT FALSE,
   sync_status    TEXT DEFAULT 'synced',
@@ -189,6 +210,7 @@ CREATE TABLE IF NOT EXISTS returs (
   retur_date     TIMESTAMPTZ DEFAULT NOW(),
   retur_type     TEXT DEFAULT 'customer',
   total_amount   NUMERIC DEFAULT 0,
+  items          JSONB DEFAULT '[]',
   notes          TEXT,
   is_deleted     BOOLEAN DEFAULT FALSE,
   sync_status    TEXT DEFAULT 'synced',
@@ -214,6 +236,30 @@ CREATE TABLE IF NOT EXISTS debts (
   created_at     TIMESTAMPTZ DEFAULT NOW(),
   updated_at     TIMESTAMPTZ DEFAULT NOW(),
   synced_at      TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS discounts (
+  id TEXT PRIMARY KEY, code TEXT, name TEXT DEFAULT '', type TEXT DEFAULT 'percentage',
+  value NUMERIC DEFAULT 0, min_purchase NUMERIC DEFAULT 0, max_discount NUMERIC DEFAULT 0,
+  is_active BOOLEAN DEFAULT TRUE, usage_limit NUMERIC DEFAULT 0, usage_count NUMERIC DEFAULT 0,
+  valid_from TIMESTAMPTZ, valid_until TIMESTAMPTZ, created_at TIMESTAMPTZ DEFAULT NOW(), updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS expenses (
+  id TEXT PRIMARY KEY, name TEXT DEFAULT '', amount NUMERIC DEFAULT 0, category TEXT DEFAULT 'Lainnya',
+  date TIMESTAMPTZ, notes TEXT, created_at TIMESTAMPTZ DEFAULT NOW(), updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS users (
+  id TEXT PRIMARY KEY, username TEXT UNIQUE NOT NULL, password TEXT NOT NULL, name TEXT DEFAULT '',
+  role user_role DEFAULT 'kasir', is_active BOOLEAN DEFAULT TRUE,
+  created_at TIMESTAMPTZ DEFAULT NOW(), updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS sales (
+  id TEXT PRIMARY KEY, total NUMERIC DEFAULT 0, subtotal NUMERIC DEFAULT 0, discount_amount NUMERIC DEFAULT 0,
+  items JSONB DEFAULT '[]', customer_name TEXT DEFAULT '', payment_method TEXT DEFAULT 'cash',
+  paid_amount NUMERIC DEFAULT 0, created_at TIMESTAMPTZ DEFAULT NOW(), updated_at TIMESTAMPTZ DEFAULT NOW()
 );
 
 -- ============================================================

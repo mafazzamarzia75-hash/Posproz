@@ -36,6 +36,7 @@ class SyncService {
   private syncIntervalMs = 30000; // Sync setiap 30 detik
   private syncListeners: Set<(stats: SyncStats) => void> = new Set();
   private currentSyncPromise: Promise<SyncResult[]> | null = null;
+  private tableSyncPromises = new Map<TableName, Promise<SyncResult>>();
 
   constructor() {
     // 🔴 GUARD: Jika Supabase tidak dikonfigurasi, jangan mulai sync sama sekali
@@ -144,10 +145,18 @@ class SyncService {
       return [];
     }
 
-    if (this.isSyncing) {
-      console.warn('⚠️ Sync already in progress');
-      return [];
+    if (this.currentSyncPromise) return this.currentSyncPromise;
+
+    this.currentSyncPromise = this.runSync();
+    try {
+      return await this.currentSyncPromise;
+    } finally {
+      this.currentSyncPromise = null;
     }
+  }
+
+  private async runSync(): Promise<SyncResult[]> {
+    if (this.isSyncing) return [];
 
     this.isSyncing = true;
     this.notifySyncListeners();
@@ -358,7 +367,16 @@ class SyncService {
     if (!offlineDetector.getStatus()) {
       throw new Error('Device offline');
     }
-    return this.syncTable(table);
+    const running = this.tableSyncPromises.get(table);
+    if (running) return running;
+
+    const promise = this.syncTable(table);
+    this.tableSyncPromises.set(table, promise);
+    try {
+      return await promise;
+    } finally {
+      this.tableSyncPromises.delete(table);
+    }
   }
 
   /**
@@ -392,7 +410,7 @@ class SyncService {
           continue;
         }
 
-        const localData = table === 'products' ? this.mapProductFromPostgres(item) : { ...item };
+        const localData = this.mapFromPostgres(table, item);
         // Convert timestamps
         if (localData.updated_at) {
           localData.updated_at = new Date(localData.updated_at).getTime();
@@ -420,8 +438,31 @@ class SyncService {
    * Clear all pending syncs
    */
   async clearPendingSyncs() {
-    await offlineDB.clearSyncedData();
+    // Pending records are retained until the server acknowledges them.
     this.notifySyncListeners();
+  }
+
+  private mapFromPostgres(table: TableName, item: any): any {
+    if (table === 'products') return this.mapProductFromPostgres(item);
+
+    const fieldMaps: Partial<Record<TableName, Record<string, string>>> = {
+      customers: { total_spent: 'totalSpent', total_transactions: 'totalTransactions', last_transaction: 'lastTransaction' },
+      suppliers: { contact_person: 'contactPerson', product_count: 'productCount', total_purchases: 'totalPurchases' },
+      transactions: { transaction_type: 'transactionType', transaction_date: 'transactionDate', customer_id: 'customerId', supplier_id: 'supplierId', total_amount: 'totalAmount', paid_amount: 'paidAmount', payment_method: 'paymentMethod', is_draft: 'isDraft', is_deleted: 'isDeleted' },
+      restocks: { product_id: 'productId', product_name: 'productName', product_sku: 'productSku', price_buy: 'priceBuy', total_cost: 'totalCost', stock_before: 'stockBefore', stock_after: 'stockAfter', supplier_id: 'supplierId', supplier_name: 'supplierName', invoice_number: 'invoiceNumber' },
+      returs: { product_id: 'productId', product_name: 'productName', product_sku: 'productSku', total_refund: 'totalRefund', customer_name: 'customerName', transaction_id: 'transactionId', supplier_name: 'supplierName', supplier_id: 'supplierId', invoice_number: 'invoiceNumber' },
+      debts: { customer_id: 'customerId', customer_name: 'customerName', supplier_id: 'supplierId', supplier_name: 'supplierName', paid_amount: 'paidAmount', due_date: 'dueDate' },
+      discounts: { min_purchase: 'minPurchase', max_discount: 'maxDiscount', is_active: 'isActive', usage_limit: 'usageLimit', usage_count: 'usageCount', valid_from: 'validFrom', valid_until: 'validUntil' },
+      users: { is_active: 'isActive' },
+      sales: { customer_name: 'customerName', payment_method: 'paymentMethod', paid_amount: 'paidAmount', discount_amount: 'discountAmount' },
+    };
+
+    const localData = { ...item };
+    for (const [serverKey, localKey] of Object.entries(fieldMaps[table] || {})) {
+      if (localData[serverKey] !== undefined) localData[localKey] = localData[serverKey];
+      delete localData[serverKey];
+    }
+    return localData;
   }
 
   /**

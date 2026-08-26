@@ -294,6 +294,14 @@ const POSPage: React.FC = () => {
   const handleFinishCheckout = async (customerName: string, paymentMethod?: string, paidAmount?: number, subtotal?: number, discountAmount?: number) => {
     if (cart.length === 0) return;
     try {
+      const stockShortage = cart.find((item) => {
+        const product = allProducts.find((candidate) => candidate.id === item.id);
+        return !product || Number(item.quantity) > Number(product.stock ?? 0);
+      });
+      if (stockShortage) {
+        throw new Error(`Stok ${stockShortage.name} tidak mencukupi.`);
+      }
+
       const items = cart.map(i => ({
         product_id: i.id,
         product_name: i.name,
@@ -331,15 +339,11 @@ const POSPage: React.FC = () => {
           };
 
           // Update in database
-          try {
-            await indexdbBarang.updateBarang({
-              ...product,
-              stock: newStock,
-              updated_at: Date.now()
-            });
-          } catch (dbErr) {
-            console.error(`Gagal update stok barang [${product.name}]:`, dbErr);
-          }
+          await indexdbBarang.updateBarang({
+            ...product,
+            stock: newStock,
+            updated_at: Date.now()
+          });
         }
       }
       setAllProducts(updatedProducts);
